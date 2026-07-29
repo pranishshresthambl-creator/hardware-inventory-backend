@@ -7,19 +7,23 @@ class BrandSerializer(serializers.ModelSerializer):
         model = Brand
         fields = '__all__'
 
-class ComputerSerializer(serializers.ModelSerializer):
+class DepartmentSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Computer
+        model = Department
         fields = '__all__'
 
 class ComputerModelSerializer(serializers.ModelSerializer):
+    brand = BrandSerializer(read_only=True)
+
     class Meta:
         model = ComputerModel
         fields = '__all__'
 
-class DepartmentSerializer(serializers.ModelSerializer):
+class ComputerSerializer(serializers.ModelSerializer):
+    model = ComputerModelSerializer(read_only=True)
+    department = DepartmentSerializer(read_only=True)
     class Meta:
-        model = Department
+        model = Computer
         fields = '__all__'
 
 class PrinterSerializer(serializers.ModelSerializer):
