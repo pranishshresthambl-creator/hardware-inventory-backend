@@ -4,7 +4,9 @@ from rest_framework_simplejwt.views import TokenRefreshView
 
 from .views import (
     ComputerViewSet,
+    ComputerModelViewSet,
     PrinterViewSet,
+    PrinterModelViewSet,
     BrandViewSet,
     DepartmentViewSet,
     LoginAPIView
@@ -15,7 +17,9 @@ router = DefaultRouter()
 
 
 router.register(r'computers', ComputerViewSet, basename='computer')
+router.register(r'computer-models', ComputerModelViewSet, basename='computer-model')
 router.register(r'printers', PrinterViewSet, basename='printer')
+router.register(r'printer-models', PrinterModelViewSet, basename='printer-model')
 router.register(r'brands', BrandViewSet, basename='brand')
 router.register(r'departments', DepartmentViewSet, basename='department')
 
