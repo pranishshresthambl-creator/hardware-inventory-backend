@@ -14,7 +14,9 @@ services:
       - POSTGRES_PASSWORD=django_pass
       - POSTGRES_PORT=5432
     env_file:
-      - .env
+      - path: .env
+        required: false
+
     depends_on:
       db:
         condition: service_healthy
