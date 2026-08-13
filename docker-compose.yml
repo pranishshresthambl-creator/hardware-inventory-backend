@@ -2,7 +2,7 @@ services:
   backend:
     build: .
     container_name: hardware_inventory_backend
-    command: sh -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    command: sh -c "python manage.py migrate && python manage.py loaddata data.json && python manage.py runserver 0.0.0.0:8000"
     volumes:
       - .:/app
     ports:
