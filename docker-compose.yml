@@ -16,7 +16,6 @@ services:
     env_file:
       - path: .env
         required: false
-
     depends_on:
       db:
         condition: service_healthy
