@@ -11,14 +11,13 @@ services:
       - .env
     depends_on:
       - db
-  
+
   # frontend:
   #   build: .
   #   container_name: hardware_inventory_frontend
   #   volumes:
   #     - .:/app
   #   depends_on:
-
 
   db:
     image: postgres:16
