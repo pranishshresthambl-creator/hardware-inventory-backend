@@ -2,23 +2,14 @@ services:
   backend:
     build: .
     container_name: hardware_inventory_backend
-    command: python manage.py runserver 0.0.0.0:8000
+    command: sh -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
     volumes:
       - .:/app
     ports:
       - "8000:8000"
-    env_file:
-      - .env
     depends_on:
-      - db
-  
-  # frontend:
-  #   build: .
-  #   container_name: hardware_inventory_frontend
-  #   volumes:
-  #     - .:/app
-  #   depends_on:
-
+      db:
+        condition: service_healthy
 
   db:
     image: postgres:16
@@ -30,6 +21,11 @@ services:
       POSTGRES_PASSWORD: django_pass
     ports:
       - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U django_user -d django_db"]
+      interval: 3s
+      timeout: 3s
+      retries: 5
     volumes:
       - postgres_data:/var/lib/postgresql/data/
 
