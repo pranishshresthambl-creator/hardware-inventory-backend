@@ -9791,59 +9791,5 @@
     "host_name": "NRB-Bin-677",
     "status": "ACTIVE"
   }
-},
-{
-  "model": "auth.user",
-  "pk": 1,
-  "fields": {
-    "password": "pbkdf2_sha256$1200000$0fY9rQVZFSAPiHsudqfLpz$6uYK/2di0sJi51x1lnnVUfcBIbSlef3QfilwpbcTXe4=",
-    "last_login": "2026-05-14T05:18:50.413Z",
-    "is_superuser": true,
-    "username": "admin",
-    "first_name": "",
-    "last_name": "",
-    "email": "admin@gmail.com",
-    "is_staff": true,
-    "is_active": true,
-    "date_joined": "2026-05-13T05:30:31.937Z",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "auth.user",
-  "pk": 2,
-  "fields": {
-    "password": "pbkdf2_sha256$1200000$NIQwCy1aVFtiwr1uKhXFHN$2SknONHCYtV02roS0u7LtOLwXsRG2K66SJ55Yi1Cp8U=",
-    "last_login": "2026-07-29T06:37:14.703Z",
-    "is_superuser": true,
-    "username": "nrb",
-    "first_name": "",
-    "last_name": "",
-    "email": "nrb@gmail.com",
-    "is_staff": true,
-    "is_active": true,
-    "date_joined": "2026-07-22T11:01:41.540Z",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "auth.user",
-  "pk": 3,
-  "fields": {
-    "password": "pbkdf2_sha256$1200000$OGyxc3oO8EuzRTzUBbnXqA$FF2vtkZK2BLaiVyYLiz02IcxzOMYg0Ejmyx9GSlLOZk=",
-    "last_login": "2026-08-13T06:23:09.106Z",
-    "is_superuser": true,
-    "username": "binayak",
-    "first_name": "",
-    "last_name": "",
-    "email": "binayak.praz23@gmail.com",
-    "is_staff": true,
-    "is_active": true,
-    "date_joined": "2026-08-06T08:58:19.866Z",
-    "groups": [],
-    "user_permissions": []
-  }
 }
 ]
