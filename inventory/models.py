@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils import timezone
 
 # Create your models here.
 
@@ -111,6 +112,18 @@ class Computer(BaseModel):
 
     purchase_date = models.DateField(null=True)
     warranty_end_date = models.DateField(null=True)
+    
+    fiscal_year = models.CharField(max_length=20, null=True, blank=True)
+    vendor_name = models.CharField(max_length=200, null=True, blank=True)
+    contact_person = models.CharField(max_length=100, null=True, blank=True)
+    office_address = models.CharField(max_length=200, null=True, blank=True)
+    phone = models.CharField(max_length=20, null=True, blank=True)
+    vendor_email = models.EmailField(null=True, blank=True)
+    domain = models.CharField(max_length=150, null=True, blank=True)
+    installed_applications = models.TextField(null=True, blank=True)
+    antivirus = models.CharField(max_length=200, null=True, blank=True)
+    security_hardening = models.TextField(null=True, blank=True)
+    
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='ACTIVE')
 
     def __str__(self):
@@ -153,6 +166,19 @@ class Printer(BaseModel):
     printer_function = models.CharField(max_length=100, null=True, blank=True)
     purchase_date = models.DateField(null=True)
     warranty_end_date = models.DateField(null=True)
+    
+    fiscal_year = models.CharField(max_length=20, null=True, blank=True)
+    vendor_name = models.CharField(max_length=200, null=True, blank=True)
+    contact_person = models.CharField(max_length=100, null=True, blank=True)
+    office_address = models.CharField(max_length=200, null=True, blank=True)
+    phone = models.CharField(max_length=20, null=True, blank=True)
+    vendor_email = models.EmailField(null=True, blank=True)
+    domain = models.CharField(max_length=150, null=True, blank=True)
+    installed_applications = models.TextField(null=True, blank=True)
+    antivirus = models.CharField(max_length=200, null=True, blank=True)
+    security_hardening = models.TextField(null=True, blank=True)
+    host_name = models.CharField(max_length=150, null=True, blank=True)
+    
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='ACTIVE')
 
     def __str__(self):

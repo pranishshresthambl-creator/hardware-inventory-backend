@@ -17,14 +17,18 @@ from django_filters.rest_framework import DjangoFilterBackend
 
 from inventory.models import (
     Computer,
+    ComputerModel,
     Printer,
+    PrinterModel,
     Brand,
     Department
 )
 
 from .serializers import (
     ComputerSerializer,
+    ComputerModelSerializer,
     PrinterSerializer,
+    PrinterModelSerializer,
     BrandSerializer,
     DepartmentSerializer
 )
@@ -42,17 +46,25 @@ class RefreshView(TokenRefreshView):
 
 # Create your views here.
 class DepartmentViewSet(ModelViewSet):
-    queryset = Department.objects.all()
+    queryset = Department.objects.filter(is_deleted=False)
     serializer_class = DepartmentSerializer
 
 class BrandViewSet(ModelViewSet):
-    queryset = Brand.objects.all()
+    queryset = Brand.objects.filter(is_deleted=False)
     serializer_class = BrandSerializer
 
 class ComputerViewSet(ModelViewSet):
-    queryset = Computer.objects.filter()
+    queryset = Computer.objects.filter(is_deleted=False)
     serializer_class = ComputerSerializer
 
+class ComputerModelViewSet(ModelViewSet):
+    queryset = ComputerModel.objects.filter(is_deleted=False)
+    serializer_class = ComputerModelSerializer
+
 class PrinterViewSet(ModelViewSet):
-    queryset = Printer.objects.filter()
+    queryset = Printer.objects.filter(is_deleted=False)
     serializer_class = PrinterSerializer
+
+class PrinterModelViewSet(ModelViewSet):
+    queryset = PrinterModel.objects.filter(is_deleted=False)
+    serializer_class = PrinterModelSerializer
