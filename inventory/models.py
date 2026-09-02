@@ -61,11 +61,11 @@ class Computer(BaseModel):
         ('DISPOSED', 'Disposed'),
     ]
 
-    department = models.ForeignKey('Department', on_delete=models.SET_NULL, null=True)
-    ims_code = models.CharField(max_length=50, null=True)
-    model = models.ForeignKey(ComputerModel, on_delete=models.SET_NULL, null=True)
-    serial_no = models.CharField(max_length=100, null=True)
-    processor = models.CharField(max_length=100)
+    department = models.ForeignKey('Department', on_delete=models.SET_NULL, null=True, blank=True)
+    ims_code = models.CharField(max_length=50, null=True, blank=True)
+    model = models.ForeignKey(ComputerModel, on_delete=models.SET_NULL, null=True, blank=True)
+    serial_no = models.CharField(max_length=100, null=True, blank=True)
+    processor = models.CharField(max_length=150, null=True, blank=True)
 
     RAM_CHOICES = [
         ('4GB', '4 GB'),
@@ -74,14 +74,14 @@ class Computer(BaseModel):
         ('32GB', '32 GB'),
     ]
 
-    ram = models.CharField(max_length=10, choices=RAM_CHOICES)
+    ram = models.CharField(max_length=20, choices=RAM_CHOICES, null=True, blank=True)
 
     STORAGE_TYPE = [
         ('HDD', 'HDD'),
         ('SSD', 'SSD'),
     ]
 
-    storage_type = models.CharField(max_length=10, choices=STORAGE_TYPE)
+    storage_type = models.CharField(max_length=20, choices=STORAGE_TYPE, null=True, blank=True)
 
     STORAGE_CHOICES = [
         ('128 GB', '128 GB'),
@@ -91,7 +91,7 @@ class Computer(BaseModel):
         ('2 TB', '2 TB'),
     ]
 
-    storage_capacity = models.CharField(max_length=10, choices=STORAGE_CHOICES)
+    storage_capacity = models.CharField(max_length=30, choices=STORAGE_CHOICES, null=True, blank=True)
     ip_address = models.GenericIPAddressField(null=True, blank=True)
 
     OPERATING_SYSTEM_CHOICES = [
@@ -103,16 +103,18 @@ class Computer(BaseModel):
     ]
 
     operating_system = models.CharField(
-        max_length=30,
-        choices=OPERATING_SYSTEM_CHOICES
+        max_length=50,
+        choices=OPERATING_SYSTEM_CHOICES,
+        null=True,
+        blank=True
     )
 
     host_name = models.CharField(max_length=150, null=True, blank=True)
     hotfix_id = models.CharField(max_length=100, blank=True, null=True)
     hotfix_date = models.DateField(blank=True, null=True)
 
-    purchase_date = models.DateField(null=True)
-    warranty_end_date = models.DateField(null=True)
+    purchase_date = models.DateField(null=True, blank=True)
+    warranty_end_date = models.DateField(null=True, blank=True)
     
     fiscal_year = models.CharField(max_length=20, null=True, blank=True)
     vendor_name = models.CharField(max_length=200, null=True, blank=True)
@@ -125,10 +127,10 @@ class Computer(BaseModel):
     antivirus = models.CharField(max_length=200, null=True, blank=True)
     security_hardening = models.TextField(null=True, blank=True)
     
-    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='ACTIVE')
+    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='ACTIVE', null=True, blank=True)
 
     def __str__(self):
-        return self.ims_code
+        return self.ims_code or self.host_name or f"Computer-{self.id}"
 
 class PrinterModel(BaseModel):
 
@@ -158,15 +160,15 @@ class Printer(BaseModel):
         ('DISPOSED', 'Disposed'),
     ]
 
-    department = models.ForeignKey('Department', on_delete=models.SET_NULL, null=True)
-    ims_code = models.CharField(max_length=50, null=True)
-    printer_name = models.CharField(max_length=100)
-    model = models.ForeignKey(PrinterModel, on_delete=models.SET_NULL, null=True)
-    serial_no = models.CharField(max_length=100, unique=True)
+    department = models.ForeignKey('Department', on_delete=models.SET_NULL, null=True, blank=True)
+    ims_code = models.CharField(max_length=50, null=True, blank=True)
+    printer_name = models.CharField(max_length=150, null=True, blank=True, default='Printer')
+    model = models.ForeignKey(PrinterModel, on_delete=models.SET_NULL, null=True, blank=True)
+    serial_no = models.CharField(max_length=100, null=True, blank=True)
     ip_address = models.GenericIPAddressField(null=True, blank=True)
     printer_function = models.CharField(max_length=100, null=True, blank=True)
-    purchase_date = models.DateField(null=True)
-    warranty_end_date = models.DateField(null=True)
+    purchase_date = models.DateField(null=True, blank=True)
+    warranty_end_date = models.DateField(null=True, blank=True)
     
     fiscal_year = models.CharField(max_length=20, null=True, blank=True)
     vendor_name = models.CharField(max_length=200, null=True, blank=True)
@@ -180,10 +182,10 @@ class Printer(BaseModel):
     security_hardening = models.TextField(null=True, blank=True)
     host_name = models.CharField(max_length=150, null=True, blank=True)
     
-    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='ACTIVE')
+    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='ACTIVE', null=True, blank=True)
 
     def __str__(self):
-        return self.ims_code
+        return self.ims_code or self.printer_name or self.serial_no or f"Printer-{self.id}"
 
 class Vendor(BaseModel):
     name = models.CharField(max_length=200)

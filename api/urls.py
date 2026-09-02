@@ -16,6 +16,10 @@ from .views import (
     PublicIssueReportView,
     PublicAutoDetectDeviceView,
 )
+from .import_views import (
+    BulkImportComputerView,
+    BulkImportPrinterView,
+)
 
 
 router = DefaultRouter()
@@ -31,6 +35,8 @@ router.register(r'departments', DepartmentViewSet, basename='department')
 router.register(r'logs', ComputerLogViewSet, basename='log')
 
 urlpatterns = [
+    path('computers/import-excel/', BulkImportComputerView.as_view(), name='computer-import-excel'),
+    path('printers/import-excel/', BulkImportPrinterView.as_view(), name='printer-import-excel'),
     path('', include(router.urls)),
     path('login/', LoginAPIView.as_view()),
     path('token/refresh/', TokenRefreshView.as_view()),
