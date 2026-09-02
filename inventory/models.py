@@ -194,3 +194,48 @@ class Vendor(BaseModel):
 
     def __str__(self):
         return self.name
+
+class ComputerLog(BaseModel):
+    LOG_TYPE_CHOICES = [
+        ('UPDATE', 'Update'),
+        ('ERROR', 'Error'),
+        ('MAINTENANCE', 'Maintenance'),
+        ('ASSIGNMENT', 'Assignment'),
+        ('SECURITY', 'Security'),
+        ('OTHER', 'Other'),
+    ]
+
+    RESOLUTION_STATUS_CHOICES = [
+        ('RESOLVED', 'Resolved'),
+        ('UNRESOLVED', 'Unresolved'),
+        ('IN_PROGRESS', 'In Progress'),
+    ]
+
+    log_id = models.CharField(max_length=50, blank=True, null=True)
+    computer = models.ForeignKey(Computer, on_delete=models.CASCADE, null=True, blank=True, related_name='logs')
+    computer_ims = models.CharField(max_length=100, null=True, blank=True)
+    log_type = models.CharField(max_length=30, choices=LOG_TYPE_CHOICES, default='UPDATE')
+    description = models.TextField()
+    authorized_by = models.CharField(max_length=150, null=True, blank=True)
+    performer_role = models.CharField(max_length=150, null=True, blank=True, default='Senior Systems Administrator')
+    assigned_user = models.CharField(max_length=150, null=True, blank=True)
+    department = models.ForeignKey(Department, on_delete=models.SET_NULL, null=True, blank=True)
+    ip_address = models.GenericIPAddressField(null=True, blank=True)
+    action_source = models.CharField(max_length=100, null=True, blank=True, default='Team Viewer')
+    start_time = models.CharField(max_length=50, null=True, blank=True)
+    end_time = models.CharField(max_length=50, null=True, blank=True)
+    log_date = models.DateTimeField(default=timezone.now)
+    resolution_status = models.CharField(max_length=30, choices=RESOLUTION_STATUS_CHOICES, default='RESOLVED')
+    action_taken = models.TextField(null=True, blank=True)
+
+    def save(self, *args, **kwargs):
+        is_new = self.pk is None
+        super().save(*args, **kwargs)
+        if is_new and not self.log_id:
+            year = self.log_date.year if self.log_date else timezone.now().year
+            self.log_id = f"LOG-{year}-{8800 + self.id}"
+            ComputerLog.objects.filter(pk=self.pk).update(log_id=self.log_id)
+
+    def __str__(self):
+        ims = self.computer_ims or (self.computer.ims_code if self.computer else 'General')
+        return f"[{self.log_id or self.log_type}] {ims} - {self.description[:40]}"
