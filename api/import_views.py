@@ -200,26 +200,43 @@ def normalize_os(val):
         return 'MACOS'
     return 'WINDOWS_11'
 
-def resolve_department(name):
+def resolve_department(name, cache=None):
     cleaned = clean_text(name)
     if not cleaned:
         return None
     norm = cleaned.upper()
+    if cache is not None and norm in cache:
+        return cache[norm]
     dept, _ = Department.objects.get_or_create(name=norm)
+    if cache is not None:
+        cache[norm] = dept
     return dept
 
-def resolve_brand(name):
+
+def resolve_brand(name, cache=None):
     cleaned = clean_text(name)
     if not cleaned:
         return None
     canonical = BRAND_CANONICAL_MAP.get(cleaned.lower(), cleaned.title())
+    key = canonical.lower()
+    if cache is not None and key in cache:
+        return cache[key]
     brand, _ = Brand.objects.get_or_create(name=canonical)
+    if cache is not None:
+        cache[key] = brand
     return brand
 
-def resolve_computer_model(brand_obj, model_name, raw_processor=''):
+
+def resolve_computer_model(brand_obj, model_name, raw_processor='', cache=None):
     cleaned_model = clean_text(model_name) or 'Optiplex Desktop'
+    if not brand_obj:
+        brand_obj = resolve_brand('HP', cache)
+
+    key = (brand_obj.id if brand_obj else None, cleaned_model.lower())
+    if cache is not None and key in cache:
+        return cache[key]
+
     low = (cleaned_model + ' ' + (raw_processor or '')).lower()
-    
     if any(k in low for k in ['aio', 'all in one', 'all-in-one', 'proone', 'ideacentre']):
         comp_type = 'ALL_IN_ONE'
     elif any(k in low for k in ['laptop', 'notebook', 'thinkpad', 'latitude', 'elitebook', 'probook', 'vostro laptop', 'inspiron laptop']):
@@ -230,23 +247,29 @@ def resolve_computer_model(brand_obj, model_name, raw_processor=''):
         comp_type = 'MINI_PC'
     else:
         comp_type = 'DESKTOP'
-        
-    if not brand_obj:
-        brand_obj = resolve_brand('HP')
 
     existing = ComputerModel.objects.filter(brand=brand_obj, name__iexact=cleaned_model).first()
-    if existing:
-        return existing
-    return ComputerModel.objects.create(
-        brand=brand_obj,
-        name=cleaned_model,
-        computer_type=comp_type
-    )
+    if not existing:
+        existing = ComputerModel.objects.create(
+            brand=brand_obj,
+            name=cleaned_model,
+            computer_type=comp_type
+        )
+    if cache is not None:
+        cache[key] = existing
+    return existing
 
-def resolve_printer_model(brand_obj, model_name, raw_type=''):
+
+def resolve_printer_model(brand_obj, model_name, raw_type='', cache=None):
     cleaned_model = clean_text(model_name) or 'LaserJet Multifunction'
+    if not brand_obj:
+        brand_obj = resolve_brand('HP', cache)
+
+    key = (brand_obj.id if brand_obj else None, cleaned_model.lower())
+    if cache is not None and key in cache:
+        return cache[key]
+
     low = (cleaned_model + ' ' + (raw_type or '')).lower()
-    
     if any(k in low for k in ['ink', 'inkjet', 'deskjet', 'pixma']):
         pr_type = 'INKJET'
     elif any(k in low for k in ['thermal', 'pos', 'barcode']):
@@ -256,17 +279,16 @@ def resolve_printer_model(brand_obj, model_name, raw_type=''):
     else:
         pr_type = 'LASER'
 
-    if not brand_obj:
-        brand_obj = resolve_brand('HP')
-
     existing = PrinterModel.objects.filter(brand=brand_obj, name__iexact=cleaned_model).first()
-    if existing:
-        return existing
-    return PrinterModel.objects.create(
-        brand=brand_obj,
-        name=cleaned_model,
-        printer_type=pr_type
-    )
+    if not existing:
+        existing = PrinterModel.objects.create(
+            brand=brand_obj,
+            name=cleaned_model,
+            printer_type=pr_type
+        )
+    if cache is not None:
+        cache[key] = existing
+    return existing
 
 
 def is_printer_device(device_val, ims_val, model_val):
@@ -419,6 +441,13 @@ class BulkImportComputerView(APIView):
         updated_count = 0
         errors = []
 
+        # Pre-cache database entities in memory for high performance (sub-second bulk imports)
+        dept_cache = {d.name.upper(): d for d in Department.objects.all()}
+        brand_cache = {b.name.lower(): b for b in Brand.objects.all()}
+        model_cache = {(m.brand_id, m.name.lower()): m for m in ComputerModel.objects.all()}
+        comp_serial_cache = {c.serial_no.lower(): c for c in Computer.objects.exclude(serial_no=None).exclude(serial_no='')}
+        comp_host_cache = {c.host_name.lower(): c for c in Computer.objects.exclude(host_name=None).exclude(host_name='')}
+
         for idx, row in df.iterrows():
             row_num = idx + 2
             try:
@@ -432,15 +461,15 @@ class BulkImportComputerView(APIView):
 
                 with transaction.atomic():
                     dept_val = get_row_val(row, 'department')
-                    dept_obj = resolve_department(dept_val)
+                    dept_obj = resolve_department(dept_val, dept_cache)
 
                     brand_val = get_row_val(row, 'brand')
-                    brand_obj = resolve_brand(brand_val)
+                    brand_obj = resolve_brand(brand_val, brand_cache)
 
                     proc_val = clean_text(get_row_val(row, 'processor'))
                     model_val = clean_text(get_row_val(row, 'model'))
                     device_type_val = clean_text(get_row_val(row, 'device_type')) or 'DESKTOP'
-                    model_obj = resolve_computer_model(brand_obj, model_val, device_type_val)
+                    model_obj = resolve_computer_model(brand_obj, model_val, device_type_val, model_cache)
 
                     raw_ram = get_row_val(row, 'ram')
                     ram_val = normalize_ram(raw_ram)
@@ -475,12 +504,12 @@ class BulkImportComputerView(APIView):
                     installed_apps_val = clean_text(get_row_val(row, 'installed_applications'))
                     security_hardening_val = clean_text(get_row_val(row, 'security_hardening'))
 
-                    # Look up existing computer by serial_no, or host_name + ip_address, or ims_code + department
+                    # Fast cache lookup for existing computer
                     existing_comp = None
-                    if serial_val:
-                        existing_comp = Computer.objects.filter(serial_no=serial_val).first()
-                    if not existing_comp and host_val:
-                        existing_comp = Computer.objects.filter(host_name=host_val).first()
+                    if serial_val and serial_val.lower() in comp_serial_cache:
+                        existing_comp = comp_serial_cache[serial_val.lower()]
+                    elif host_val and host_val.lower() in comp_host_cache:
+                        existing_comp = comp_host_cache[host_val.lower()]
 
                     if existing_comp:
                         # Update existing
@@ -531,7 +560,7 @@ class BulkImportComputerView(APIView):
                         updated_count += 1
                     else:
                         # Create new
-                        Computer.objects.create(
+                        new_comp = Computer.objects.create(
                             department=dept_obj,
                             model=model_obj,
                             ims_code=ims_val,
@@ -556,6 +585,10 @@ class BulkImportComputerView(APIView):
                             security_hardening=security_hardening_val,
                             status=status_val,
                         )
+                        if serial_val:
+                            comp_serial_cache[serial_val.lower()] = new_comp
+                        if host_val:
+                            comp_host_cache[host_val.lower()] = new_comp
                         created_count += 1
 
             except Exception as row_err:
@@ -653,6 +686,12 @@ class BulkImportPrinterView(APIView):
         updated_count = 0
         errors = []
 
+        # Pre-cache database entities in memory for high performance (sub-second bulk imports)
+        dept_cache = {d.name.upper(): d for d in Department.objects.all()}
+        brand_cache = {b.name.lower(): b for b in Brand.objects.all()}
+        printer_model_cache = {(m.brand_id, m.name.lower()): m for m in PrinterModel.objects.all()}
+        prt_serial_cache = {p.serial_no.lower(): p for p in Printer.objects.exclude(serial_no=None).exclude(serial_no='')}
+
         for idx, row in df.iterrows():
             row_num = idx + 2
             try:
@@ -666,14 +705,14 @@ class BulkImportPrinterView(APIView):
 
                 with transaction.atomic():
                     dept_val = get_row_val(row, 'department')
-                    dept_obj = resolve_department(dept_val)
+                    dept_obj = resolve_department(dept_val, dept_cache)
 
                     brand_val = get_row_val(row, 'brand')
-                    brand_obj = resolve_brand(brand_val)
+                    brand_obj = resolve_brand(brand_val, brand_cache)
 
                     model_val = clean_text(get_row_val(row, 'model'))
                     raw_type = clean_text(get_row_val(row, 'printer_type')) or ''
-                    model_obj = resolve_printer_model(brand_obj, model_val, raw_type)
+                    model_obj = resolve_printer_model(brand_obj, model_val, raw_type, printer_model_cache)
 
                     raw_device = clean_text(get_row_val(row, 'device'))
                     if raw_device and raw_device.lower() not in ('printer', 'printers', 'device', 'default', 'n/a'):
@@ -694,9 +733,10 @@ class BulkImportPrinterView(APIView):
                     ims_val = clean_text(get_row_val(row, 'ims_code'))
                     serial_val = clean_text(get_row_val(row, 'serial_no'))
 
+                    # Fast cache lookup for existing printer
                     existing_prt = None
-                    if serial_val:
-                        existing_prt = Printer.objects.filter(serial_no=serial_val).first()
+                    if serial_val and serial_val.lower() in prt_serial_cache:
+                        existing_prt = prt_serial_cache[serial_val.lower()]
 
                     if existing_prt:
                         existing_prt.department = dept_obj or existing_prt.department
@@ -729,7 +769,7 @@ class BulkImportPrinterView(APIView):
                         existing_prt.save()
                         updated_count += 1
                     else:
-                        Printer.objects.create(
+                        new_prt = Printer.objects.create(
                             department=dept_obj,
                             model=model_obj,
                             printer_name=device_name,
@@ -746,6 +786,8 @@ class BulkImportPrinterView(APIView):
                             host_name=host_val,
                             status=status_val,
                         )
+                        if serial_val:
+                            prt_serial_cache[serial_val.lower()] = new_prt
                         created_count += 1
 
             except Exception as row_err:
