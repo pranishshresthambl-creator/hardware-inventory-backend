@@ -92,6 +92,22 @@ class BrandViewSet(ModelViewSet):
 class ComputerViewSet(ModelViewSet):
     queryset = Computer.objects.filter(is_deleted=False)
     serializer_class = ComputerSerializer
+    filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
+    filterset_fields = ['department', 'model', 'status', 'operating_system', 'ram', 'storage_type']
+    search_fields = [
+        'host_name',
+        'ip_address',
+        'serial_no',
+        'ims_code',
+        'processor',
+        'department__name',
+        'model__name',
+        'model__brand__name',
+        'operating_system',
+        'vendor_name',
+        'vendor_email',
+        'status',
+    ]
 
 class ComputerModelViewSet(ModelViewSet):
     queryset = ComputerModel.objects.filter(is_deleted=False)
@@ -100,6 +116,22 @@ class ComputerModelViewSet(ModelViewSet):
 class PrinterViewSet(ModelViewSet):
     queryset = Printer.objects.filter(is_deleted=False)
     serializer_class = PrinterSerializer
+    filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
+    filterset_fields = ['department', 'model', 'status']
+    search_fields = [
+        'printer_name',
+        'ip_address',
+        'serial_no',
+        'ims_code',
+        'host_name',
+        'printer_function',
+        'department__name',
+        'model__name',
+        'model__brand__name',
+        'vendor_name',
+        'vendor_email',
+        'status',
+    ]
 
 class PrinterModelViewSet(ModelViewSet):
     queryset = PrinterModel.objects.filter(is_deleted=False)
