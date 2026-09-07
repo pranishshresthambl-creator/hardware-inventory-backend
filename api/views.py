@@ -1,7 +1,7 @@
 import socket
 from django.contrib.auth import authenticate
 from django.utils import timezone
-from django.db.models import Q
+from django.db.models import Q, Case, When, Value, IntegerField
 
 from rest_framework.views import APIView
 from rest_framework.viewsets import ModelViewSet
@@ -41,6 +41,16 @@ from .serializers import (
     UserSerializer,
     ComputerLogSerializer,
 )
+from .filters import (
+    ComputerFilter,
+    PrinterFilter,
+    ComputerLogFilter,
+    BrandFilter,
+    DepartmentFilter,
+    ComputerModelFilter,
+    PrinterModelFilter,
+    UserFilter,
+)
 
 
 class LoginAPIView(TokenObtainPairView):
@@ -72,6 +82,10 @@ class RefreshView(TokenRefreshView):
 class UserViewSet(ModelViewSet):
     queryset = User.objects.all().order_by('-date_joined')
     serializer_class = UserSerializer
+    filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
+    filterset_class = UserFilter
+    search_fields = ['username', 'first_name', 'last_name', 'email']
+    ordering_fields = ['date_joined', 'username', 'last_login', 'first_name']
 
     @action(detail=False, methods=['post'])
     def bulk_delete(self, request):
@@ -82,42 +96,63 @@ class UserViewSet(ModelViewSet):
         return Response({"error": "No IDs provided"}, status=status.HTTP_400_BAD_REQUEST)
 
 class DepartmentViewSet(ModelViewSet):
-    queryset = Department.objects.filter(is_deleted=False)
+    queryset = Department.objects.filter(is_deleted=False).order_by('name')
     serializer_class = DepartmentSerializer
+    filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
+    filterset_class = DepartmentFilter
+    search_fields = ['name', 'status']
+    ordering_fields = ['name', 'created_at', 'status']
 
 class BrandViewSet(ModelViewSet):
-    queryset = Brand.objects.filter(is_deleted=False)
+    queryset = Brand.objects.filter(is_deleted=False).order_by('name')
     serializer_class = BrandSerializer
+    filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
+    filterset_class = BrandFilter
+    search_fields = ['name', 'status']
+    ordering_fields = ['name', 'created_at', 'status']
 
 class ComputerViewSet(ModelViewSet):
-    queryset = Computer.objects.filter(is_deleted=False)
+    queryset = Computer.objects.filter(is_deleted=False).select_related('department', 'model', 'model__brand')
     serializer_class = ComputerSerializer
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
-    filterset_fields = ['department', 'model', 'status', 'operating_system', 'ram', 'storage_type']
+    filterset_class = ComputerFilter
     search_fields = [
         'host_name',
         'ip_address',
         'serial_no',
         'ims_code',
         'processor',
+        'ram',
+        'storage_capacity',
+        'storage_type',
+        'operating_system',
         'department__name',
         'model__name',
         'model__brand__name',
-        'operating_system',
+        'model__computer_type',
         'vendor_name',
         'vendor_email',
+        'domain',
+        'antivirus',
+        'fiscal_year',
         'status',
+        'hotfix_id',
     ]
+    ordering_fields = ['host_name', 'created_at', 'status', 'purchase_date', 'ip_address']
 
 class ComputerModelViewSet(ModelViewSet):
-    queryset = ComputerModel.objects.filter(is_deleted=False)
+    queryset = ComputerModel.objects.filter(is_deleted=False).select_related('brand').order_by('name')
     serializer_class = ComputerModelSerializer
+    filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
+    filterset_class = ComputerModelFilter
+    search_fields = ['name', 'brand__name', 'computer_type', 'status']
+    ordering_fields = ['name', 'brand__name', 'created_at', 'computer_type', 'status']
 
 class PrinterViewSet(ModelViewSet):
-    queryset = Printer.objects.filter(is_deleted=False)
+    queryset = Printer.objects.filter(is_deleted=False).select_related('department', 'model', 'model__brand')
     serializer_class = PrinterSerializer
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
-    filterset_fields = ['department', 'model', 'status']
+    filterset_class = PrinterFilter
     search_fields = [
         'printer_name',
         'ip_address',
@@ -130,25 +165,38 @@ class PrinterViewSet(ModelViewSet):
         'model__brand__name',
         'vendor_name',
         'vendor_email',
+        'domain',
+        'fiscal_year',
         'status',
     ]
+    ordering_fields = ['printer_name', 'created_at', 'status', 'purchase_date', 'ip_address']
 
 class PrinterModelViewSet(ModelViewSet):
-    queryset = PrinterModel.objects.filter(is_deleted=False)
+    queryset = PrinterModel.objects.filter(is_deleted=False).select_related('brand').order_by('name')
     serializer_class = PrinterModelSerializer
+    filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
+    filterset_class = PrinterModelFilter
+    search_fields = ['name', 'brand__name', 'printer_type', 'status']
+    ordering_fields = ['name', 'brand__name', 'created_at', 'printer_type', 'status']
 
 class ComputerLogViewSet(ModelViewSet):
-    queryset = ComputerLog.objects.filter(is_deleted=False).order_by('-log_date', '-created_at')
+    queryset = ComputerLog.objects.filter(is_deleted=False).select_related('computer', 'department', 'computer__model').order_by('-log_date', '-created_at')
     serializer_class = ComputerLogSerializer
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
-    filterset_fields = ['log_type', 'department', 'computer', 'resolution_status']
+    filterset_class = ComputerLogFilter
     search_fields = [
         'description',
         'authorized_by',
+        'performer_role',
+        'assigned_user',
+        'action_source',
         'computer_ims',
         'computer__ims_code',
         'computer__host_name',
         'action_taken',
+        'department__name',
+        'log_type',
+        'resolution_status',
     ]
     ordering_fields = ['log_date', 'created_at', 'log_type', 'resolution_status']
 
@@ -336,8 +384,18 @@ class PublicDeviceLookupView(APIView):
 
     def get(self, request):
         query = request.query_params.get('q', '').strip()
+        limit_param = request.query_params.get('limit', '').strip()
         
-        computers = Computer.objects.filter(is_deleted=False)
+        computers = Computer.objects.filter(is_deleted=False).select_related(
+            'model', 'department', 'model__brand'
+        ).annotate(
+            empty_host=Case(
+                When(Q(host_name__isnull=True) | Q(host_name=''), then=Value(1)),
+                default=Value(0),
+                output_field=IntegerField()
+            )
+        ).order_by('empty_host', 'host_name', 'ims_code')
+
         if query:
             computers = computers.filter(
                 Q(host_name__icontains=query) |
@@ -346,8 +404,11 @@ class PublicDeviceLookupView(APIView):
                 Q(ip_address__icontains=query)
             )
         
+        if limit_param and limit_param.isdigit():
+            computers = computers[:int(limit_param)]
+        
         results = []
-        for comp in computers.select_related('model', 'department', 'model__brand')[:60]:
+        for comp in computers:
             results.append({
                 'id': comp.id,
                 'device_type': 'Computer',
