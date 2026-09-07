@@ -9,9 +9,6 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# Databases
-db.sqlite3
-*.sqlite3
 
 # Environment variables & editor files
 .env
