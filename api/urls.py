@@ -11,6 +11,7 @@ from .views import (
     BrandViewSet,
     DepartmentViewSet,
     ComputerLogViewSet,
+    DisposalRecordViewSet,
     LoginAPIView,
     PublicDeviceLookupView,
     PublicIssueReportView,
@@ -29,6 +30,7 @@ router.register(r'printer-models', PrinterModelViewSet, basename='printer-model'
 router.register(r'brands', BrandViewSet, basename='brand')
 router.register(r'departments', DepartmentViewSet, basename='department')
 router.register(r'logs', ComputerLogViewSet, basename='log')
+router.register(r'disposals', DisposalRecordViewSet, basename='disposal')
 
 urlpatterns = [
     path('', include(router.urls)),
