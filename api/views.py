@@ -311,8 +311,7 @@ class PublicAutoDetectDeviceView(APIView):
             computer = Computer.objects.filter(
                 Q(host_name__iexact=target_hostname) | 
                 Q(host_name__iexact=short_host) | 
-                Q(host_name__icontains=short_host),
-                is_deleted=False
+                Q(host_name__icontains=short_host)
             ).select_related('model', 'department', 'model__brand').first()
             if computer:
                 matched_via = 'hostname'
@@ -320,8 +319,7 @@ class PublicAutoDetectDeviceView(APIView):
         # ── 3. Secondary Match: Workstation IP Address (Fallback / Dual Detection) ──
         if not computer and client_ip and not is_virtual:
             computer = Computer.objects.filter(
-                ip_address=client_ip,
-                is_deleted=False
+                ip_address=client_ip
             ).select_related('model', 'department', 'model__brand').first()
             if computer:
                 matched_via = 'ip'
@@ -386,7 +384,7 @@ class PublicDeviceLookupView(APIView):
         query = request.query_params.get('q', '').strip()
         limit_param = request.query_params.get('limit', '').strip()
         
-        computers = Computer.objects.filter(is_deleted=False).select_related(
+        computers = Computer.objects.all().select_related(
             'model', 'department', 'model__brand'
         ).annotate(
             empty_host=Case(
@@ -455,13 +453,13 @@ class PublicIssueReportView(APIView):
         # Match computer if computer_id or host_name provided
         computer = None
         if computer_id:
-            computer = Computer.objects.filter(id=computer_id, is_deleted=False).first()
+            computer = Computer.objects.filter(id=computer_id).first()
         elif host_name:
-            computer = Computer.objects.filter(host_name__iexact=host_name, is_deleted=False).first()
+            computer = Computer.objects.filter(host_name__iexact=host_name).first()
 
         department = None
         if department_id:
-            department = Department.objects.filter(id=department_id, is_deleted=False).first()
+            department = Department.objects.filter(id=department_id).first()
         elif computer and computer.department:
             department = computer.department
 
