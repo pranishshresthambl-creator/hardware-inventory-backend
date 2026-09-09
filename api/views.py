@@ -26,6 +26,7 @@ from inventory.models import (
     Brand,
     Department,
     ComputerLog,
+    DisposalRecord,
 )
 
 from rest_framework.decorators import action
@@ -40,6 +41,7 @@ from .serializers import (
     DepartmentSerializer,
     UserSerializer,
     ComputerLogSerializer,
+    DisposalRecordSerializer,
 )
 from .filters import (
     ComputerFilter,
@@ -508,3 +510,22 @@ class PublicIssueReportView(APIView):
             'log_date': log.log_date,
             'resolution_status': log.resolution_status,
         }, status=status.HTTP_201_CREATED)
+
+
+class DisposalRecordViewSet(ModelViewSet):
+    """CRUD for hardware disposal records."""
+    authentication_classes = [JWTAuthentication]
+    permission_classes = [permissions.IsAuthenticated]
+    serializer_class = DisposalRecordSerializer
+    filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
+    search_fields = ['disposal_id', 'asset_name', 'asset_ims_code', 'asset_serial_no', 'approved_by', 'notes']
+    filterset_fields = ['asset_type', 'disposal_method', 'disposal_reason', 'data_sanitized']
+    ordering_fields = ['disposal_date', 'created_at', 'salvage_value']
+    ordering = ['-disposal_date']
+
+    def get_queryset(self):
+        return DisposalRecord.objects.filter(is_deleted=False).select_related(
+            'computer', 'printer', 'department',
+            'computer__model', 'computer__model__brand', 'computer__department',
+            'printer__model', 'printer__model__brand', 'printer__department',
+        )

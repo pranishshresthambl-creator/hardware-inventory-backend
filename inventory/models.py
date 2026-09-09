@@ -241,3 +241,69 @@ class ComputerLog(BaseModel):
     def __str__(self):
         ims = self.computer_ims or (self.computer.ims_code if self.computer else 'General')
         return f"[{self.log_id or self.log_type}] {ims} - {self.description[:40]}"
+
+
+class DisposalRecord(BaseModel):
+    ASSET_TYPE_CHOICES = [
+        ('COMPUTER', 'Computer'),
+        ('PRINTER', 'Printer'),
+    ]
+
+    DISPOSAL_METHOD_CHOICES = [
+        ('AUCTION', 'Auction / Sale'),
+        ('E_WASTE', 'E-Waste Recycling'),
+        ('DONATION', 'Donation / Transfer'),
+        ('SCRAP', 'Scrap / Cannibalize Parts'),
+        ('DESTROYED', 'Physical Destruction'),
+        ('WRITE_OFF', 'Write-Off / Loss'),
+        ('RETURN_TO_VENDOR', 'Return to Vendor / Buyback'),
+    ]
+
+    DISPOSAL_REASON_CHOICES = [
+        ('OBSOLETE', 'End of Lifecycle / Obsolete'),
+        ('BEYOND_ECONOMIC_REPAIR', 'Beyond Economic Repair'),
+        ('PHYSICAL_DAMAGE', 'Irreparable Physical Damage'),
+        ('UPGRADED', 'Replaced by New Hardware'),
+        ('SECURITY_DECOMMISSION', 'Security Policy Decommission'),
+        ('LOST_STOLEN', 'Lost or Stolen'),
+    ]
+
+    SANITIZATION_METHOD_CHOICES = [
+        ('NIST_800_88', 'NIST SP 800-88 Purge/Clear'),
+        ('DOD_5220_22_M', 'DoD 5220.22-M 3-Pass Wipe'),
+        ('PHYSICAL_DESTRUCTION', 'Physical Degaussing / Shredding'),
+        ('STORAGE_REMOVED', 'Storage Drive Physically Retained'),
+        ('FACTORY_RESET', 'Factory Reset / Firmware Wipe'),
+        ('NA', 'Not Applicable (Non-Storage Asset)'),
+    ]
+
+    disposal_id = models.CharField(max_length=50, blank=True, null=True)
+    asset_type = models.CharField(max_length=20, choices=ASSET_TYPE_CHOICES, default='COMPUTER')
+    computer = models.ForeignKey(Computer, on_delete=models.SET_NULL, null=True, blank=True, related_name='disposal_records')
+    printer = models.ForeignKey(Printer, on_delete=models.SET_NULL, null=True, blank=True, related_name='disposal_records')
+    department = models.ForeignKey(Department, on_delete=models.SET_NULL, null=True, blank=True)
+    asset_ims_code = models.CharField(max_length=100, null=True, blank=True)
+    asset_serial_no = models.CharField(max_length=100, null=True, blank=True)
+    asset_name = models.CharField(max_length=200, null=True, blank=True)
+    disposal_method = models.CharField(max_length=50, choices=DISPOSAL_METHOD_CHOICES, default='E_WASTE')
+    disposal_reason = models.CharField(max_length=50, choices=DISPOSAL_REASON_CHOICES, default='OBSOLETE')
+    disposal_date = models.DateField(default=timezone.now)
+    approved_by = models.CharField(max_length=150, null=True, blank=True)
+    approval_reference_no = models.CharField(max_length=100, null=True, blank=True)
+    salvage_value = models.DecimalField(max_digits=12, decimal_places=2, default=0.00)
+    data_sanitized = models.BooleanField(default=True)
+    sanitization_method = models.CharField(max_length=50, choices=SANITIZATION_METHOD_CHOICES, default='NIST_800_88')
+    sanitized_by = models.CharField(max_length=150, null=True, blank=True)
+    certificate_no = models.CharField(max_length=100, null=True, blank=True)
+    notes = models.TextField(null=True, blank=True)
+
+    def save(self, *args, **kwargs):
+        is_new = self.pk is None
+        super().save(*args, **kwargs)
+        if is_new and not self.disposal_id:
+            year = self.disposal_date.year if self.disposal_date else timezone.now().year
+            self.disposal_id = f"DSP-{year}-{self.id}"
+            DisposalRecord.objects.filter(pk=self.pk).update(disposal_id=self.disposal_id)
+
+    def __str__(self):
+        return f"[{self.disposal_id or 'DSP'}] {self.asset_name or self.asset_ims_code or 'Unknown'}"

@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from django.utils import timezone
-from inventory.models import Brand, Computer, ComputerModel, Department, Printer, PrinterModel, ComputerLog
+from inventory.models import Brand, Computer, ComputerModel, Department, Printer, PrinterModel, ComputerLog, DisposalRecord
 
 
 class BrandSerializer(serializers.ModelSerializer):
@@ -199,3 +199,28 @@ class ComputerLogSerializer(serializers.ModelSerializer):
         if len(parts) >= 2:
             return f"{parts[0][0]}{parts[-1][0]}".upper()
         return name[:2].upper()
+
+
+class DisposalRecordSerializer(serializers.ModelSerializer):
+    computer = ComputerSerializer(read_only=True)
+    printer = PrinterSerializer(read_only=True)
+    department = DepartmentSerializer(read_only=True)
+    computer_id = serializers.PrimaryKeyRelatedField(
+        queryset=Computer.objects.all(), source='computer', write_only=True, required=False, allow_null=True
+    )
+    printer_id = serializers.PrimaryKeyRelatedField(
+        queryset=Printer.objects.all(), source='printer', write_only=True, required=False, allow_null=True
+    )
+    department_id = serializers.PrimaryKeyRelatedField(
+        queryset=Department.objects.all(), source='department', write_only=True, required=False, allow_null=True
+    )
+    disposal_date_formatted = serializers.SerializerMethodField()
+
+    class Meta:
+        model = DisposalRecord
+        fields = '__all__'
+
+    def get_disposal_date_formatted(self, obj):
+        if obj.disposal_date:
+            return obj.disposal_date.strftime('%d %b %Y')
+        return None
