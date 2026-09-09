@@ -158,7 +158,7 @@ class ComputerLogFilter(django_filters.FilterSet):
                 Q(action_source='Help Portal') |
                 Q(performer_role='Help Desk User Submission')
             )
-        elif val_upper in ('UNRESOLVED', 'IN_PROGRESS', 'RESOLVED'):
+        elif val_upper in ('UNRESOLVED', 'IN_PROGRESS', 'RESOLVED', 'REFERRED_TO_DISPOSAL'):
             return queryset.filter(resolution_status=val_upper)
         return queryset
 
