@@ -514,8 +514,6 @@ class PublicIssueReportView(APIView):
 
 class DisposalRecordViewSet(ModelViewSet):
     """CRUD for hardware disposal records."""
-    authentication_classes = [JWTAuthentication]
-    permission_classes = [permissions.IsAuthenticated]
     serializer_class = DisposalRecordSerializer
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
     search_fields = ['disposal_id', 'asset_name', 'asset_ims_code', 'asset_serial_no', 'approved_by', 'notes']
