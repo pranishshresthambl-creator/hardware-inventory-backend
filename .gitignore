@@ -16,3 +16,6 @@ __pycache__/
 .idea/
 .DS_Store
 *.backup
+tmp*
+*-shm
+*-wal
