@@ -139,6 +139,9 @@ class UserSerializer(serializers.ModelSerializer):
 
     def update(self, instance, validated_data):
         password = validated_data.pop('password', None)
+        if not password and 'password' in self.initial_data and self.initial_data.get('password'):
+            password = self.initial_data.get('password')
+
         role = self.initial_data.get('role')
         if role:
             if role == 'Super Admin':
@@ -157,6 +160,9 @@ class UserSerializer(serializers.ModelSerializer):
 
         for attr, value in validated_data.items():
             setattr(instance, attr, value)
+
+        if password:
+            instance.set_password(password)
 
         instance.save()
         return instance
