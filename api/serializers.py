@@ -61,6 +61,8 @@ class PrinterSerializer(serializers.ModelSerializer):
 
 
 from django.contrib.auth.models import User
+from django.contrib.auth.password_validation import validate_password
+from django.core.exceptions import ValidationError as DjangoValidationError
 
 class UserSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True, required=False, allow_blank=True)
@@ -87,6 +89,28 @@ class UserSerializer(serializers.ModelSerializer):
             'status',
             'password',
         ]
+
+    def validate_password(self, value):
+        if value:
+            user = self.instance
+            if not user:
+                username = self.initial_data.get('username')
+                email = self.initial_data.get('email')
+                first_name = self.initial_data.get('first_name')
+                last_name = self.initial_data.get('last_name')
+                user = User(
+                    username=username,
+                    email=email,
+                    first_name=first_name,
+                    last_name=last_name,
+                )
+            try:
+                validate_password(value, user=user)
+            except DjangoValidationError as e:
+                raise serializers.ValidationError(list(e.messages))
+        elif not self.instance:
+            raise serializers.ValidationError("Password is required for user creation.")
+        return value
 
     def get_role(self, obj):
         if obj.is_superuser:
@@ -139,6 +163,9 @@ class UserSerializer(serializers.ModelSerializer):
 
     def update(self, instance, validated_data):
         password = validated_data.pop('password', None)
+        if not password and 'password' in self.initial_data and self.initial_data.get('password'):
+            password = self.initial_data.get('password')
+
         role = self.initial_data.get('role')
         if role:
             if role == 'Super Admin':
@@ -157,6 +184,9 @@ class UserSerializer(serializers.ModelSerializer):
 
         for attr, value in validated_data.items():
             setattr(instance, attr, value)
+
+        if password:
+            instance.set_password(password)
 
         instance.save()
         return instance
