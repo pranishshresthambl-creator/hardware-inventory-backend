@@ -133,6 +133,10 @@ class UserSerializer(serializers.ModelSerializer):
         return None
 
     def create(self, validated_data):
+        request = self.context.get('request')
+        if request and not (request.user and request.user.is_superuser):
+            raise serializers.ValidationError({"detail": "Only Super Admin is authorized to create user accounts."})
+
         password = validated_data.pop('password', None)
         role = self.initial_data.get('role')
         if role == 'Super Admin':
@@ -157,22 +161,71 @@ class UserSerializer(serializers.ModelSerializer):
         return user
 
     def update(self, instance, validated_data):
+        request = self.context.get('request')
+        is_requesting_superuser = bool(request and request.user and request.user.is_superuser)
+
         password = validated_data.pop('password', None)
         if not password and 'password' in self.initial_data and self.initial_data.get('password'):
             password = self.initial_data.get('password')
 
         role = self.initial_data.get('role')
-        if role:
-            if role == 'Super Admin':
-                instance.is_superuser = True
-                instance.is_staff = True
-            else:
-                instance.is_superuser = False
-                instance.is_staff = True
-
         status = self.initial_data.get('status')
-        if status:
-            instance.is_active = (status != 'INACTIVE')
+
+        # 1. Non-superusers CANNOT change role, status, or username
+        if not is_requesting_superuser:
+            current_role = 'Super Admin' if instance.is_superuser else 'IT Support'
+            if role and role != current_role:
+                raise serializers.ValidationError({
+                    "role": "Only Super Admin is authorized to change user roles."
+                })
+
+            current_status = 'ACTIVE' if instance.is_active else 'INACTIVE'
+            if status and status != current_status:
+                raise serializers.ValidationError({
+                    "status": "Only Super Admin is authorized to change account status."
+                })
+
+            if 'username' in validated_data and validated_data['username'] != instance.username:
+                raise serializers.ValidationError({
+                    "username": "Only Super Admin is authorized to change usernames."
+                })
+
+            # Prevent elevation or tampering via direct field submission
+            validated_data.pop('is_superuser', None)
+            validated_data.pop('is_staff', None)
+            validated_data.pop('is_active', None)
+        else:
+            # 2. Super Admin is making updates: Protect the last active Super Admin
+            new_is_superuser = instance.is_superuser
+            if role:
+                new_is_superuser = (role == 'Super Admin')
+            elif 'is_superuser' in validated_data:
+                new_is_superuser = bool(validated_data['is_superuser'])
+
+            new_is_active = instance.is_active
+            if status:
+                new_is_active = (status != 'INACTIVE')
+            elif 'is_active' in validated_data:
+                new_is_active = bool(validated_data['is_active'])
+
+            # If user is currently an active superuser, and will no longer be an active superuser
+            if instance.is_superuser and instance.is_active and (not new_is_superuser or not new_is_active):
+                remaining_superadmins = User.objects.filter(is_superuser=True, is_active=True).exclude(pk=instance.pk).count()
+                if remaining_superadmins == 0:
+                    raise serializers.ValidationError({
+                        "detail": "Cannot demote or deactivate the last active Super Admin account."
+                    })
+
+            if role:
+                if role == 'Super Admin':
+                    instance.is_superuser = True
+                    instance.is_staff = True
+                else:
+                    instance.is_superuser = False
+                    instance.is_staff = True
+
+            if status:
+                instance.is_active = (status != 'INACTIVE')
 
         for attr, value in validated_data.items():
             setattr(instance, attr, value)

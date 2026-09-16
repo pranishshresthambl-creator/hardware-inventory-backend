@@ -139,12 +139,29 @@ class UserViewSet(ModelViewSet):
     search_fields = ['username', 'first_name', 'last_name', 'email']
     ordering_fields = ['date_joined', 'username', 'last_login', 'first_name']
 
+    def perform_destroy(self, instance):
+        if instance.is_superuser:
+            remaining = User.objects.filter(is_superuser=True, is_active=True).exclude(pk=instance.pk).count()
+            if remaining == 0:
+                from rest_framework.exceptions import ValidationError
+                raise ValidationError({"detail": "Cannot delete the last active Super Admin account."})
+        instance.delete()
+
     @action(detail=False, methods=['post'])
     def bulk_delete(self, request):
         ids = request.data.get('ids', [])
         if ids:
-            User.objects.filter(id__in=ids).delete()
-            return Response({"message": f"Successfully deleted {len(ids)} users"}, status=status.HTTP_200_OK)
+            users_to_delete = User.objects.filter(id__in=ids)
+            if users_to_delete.filter(is_superuser=True).exists():
+                remaining = User.objects.filter(is_superuser=True, is_active=True).exclude(id__in=ids).count()
+                if remaining == 0:
+                    return Response(
+                        {"error": "Cannot delete all active Super Admin accounts."},
+                        status=status.HTTP_400_BAD_REQUEST
+                    )
+            count = users_to_delete.count()
+            users_to_delete.delete()
+            return Response({"message": f"Successfully deleted {count} users"}, status=status.HTTP_200_OK)
         return Response({"error": "No IDs provided"}, status=status.HTTP_400_BAD_REQUEST)
 
 class DepartmentViewSet(ModelViewSet):
