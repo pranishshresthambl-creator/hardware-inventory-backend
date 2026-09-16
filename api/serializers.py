@@ -115,9 +115,7 @@ class UserSerializer(serializers.ModelSerializer):
     def get_role(self, obj):
         if obj.is_superuser:
             return 'Super Admin'
-        if obj.is_staff:
-            return 'Admin'
-        return 'User'
+        return 'IT Support'
 
     def get_department_name(self, obj):
         return 'IT'
@@ -140,12 +138,9 @@ class UserSerializer(serializers.ModelSerializer):
         if role == 'Super Admin':
             validated_data['is_superuser'] = True
             validated_data['is_staff'] = True
-        elif role == 'Admin':
-            validated_data['is_staff'] = True
-            validated_data['is_superuser'] = False
         else:
-            validated_data['is_staff'] = False
             validated_data['is_superuser'] = False
+            validated_data['is_staff'] = True
 
         status = self.initial_data.get('status')
         if status == 'INACTIVE':
@@ -171,12 +166,9 @@ class UserSerializer(serializers.ModelSerializer):
             if role == 'Super Admin':
                 instance.is_superuser = True
                 instance.is_staff = True
-            elif role == 'Admin':
-                instance.is_staff = True
-                instance.is_superuser = False
             else:
-                instance.is_staff = False
                 instance.is_superuser = False
+                instance.is_staff = True
 
         status = self.initial_data.get('status')
         if status:

@@ -211,6 +211,7 @@ class ComputerLog(BaseModel):
         ('RESOLVED', 'Resolved'),
         ('UNRESOLVED', 'Unresolved'),
         ('IN_PROGRESS', 'In Progress'),
+        ('REFERRED_TO_DISPOSAL', 'Referred to Disposal'),
     ]
 
     log_id = models.CharField(max_length=50, blank=True, null=True)

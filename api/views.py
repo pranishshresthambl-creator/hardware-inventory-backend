@@ -72,6 +72,7 @@ class LoginAPIView(TokenObtainPairView):
                     'email': user.email,
                     'is_staff': user.is_staff,
                     'is_superuser': user.is_superuser,
+                    'role': 'Super Admin' if user.is_superuser else 'IT Support',
                 }
             response.data['message'] = "Login successful"
         return response
@@ -80,10 +81,59 @@ class LoginAPIView(TokenObtainPairView):
 class RefreshView(TokenRefreshView):
     pass
 
+
+class UserPermission(permissions.BasePermission):
+    """
+    - Allows authenticated users (both Super Admin and IT Support) to LIST/RETRIEVE the user directory.
+    - Allows users to update their own profile (or Super Admin to update any profile).
+    - Restricts CREATE (POST) and DELETE (destroy / bulk_delete) strictly to Super Admin (is_superuser=True).
+    """
+    message = "Only Super Admin is authorized to create or delete user accounts."
+
+    def has_permission(self, request, view):
+        if not (request.user and request.user.is_authenticated):
+            return False
+        # Read-only actions (list, retrieve) are open to all authenticated users
+        if request.method in permissions.SAFE_METHODS:
+            return True
+        # Creation and bulk deletion require Super Admin
+        if request.method == 'POST' or getattr(view, 'action', None) == 'bulk_delete':
+            return bool(request.user.is_superuser)
+        # Deleting a user requires Super Admin
+        if request.method == 'DELETE':
+            return bool(request.user.is_superuser)
+        # For PUT / PATCH updates, let has_object_permission handle own vs other
+        return True
+
+    def has_object_permission(self, request, view, obj):
+        # Read access allowed
+        if request.method in permissions.SAFE_METHODS:
+            return True
+        # Delete only Super Admin
+        if request.method == 'DELETE':
+            return bool(request.user.is_superuser)
+        # Super Admin can edit any user; IT Support can edit only their own profile
+        return bool(request.user.is_superuser or request.user.id == obj.id)
+
+
+class CanDeleteIfSuperUser(permissions.BasePermission):
+    """
+    Allows reading/creating/updating to staff (e.g. IT Support),
+    but restricts DELETE (destroy) and bulk_delete actions strictly to Super Admin (is_superuser=True).
+    """
+    message = "Only Super Admin is authorized to delete records."
+
+    def has_permission(self, request, view):
+        if request.method == 'DELETE' or getattr(view, 'action', None) == 'bulk_delete':
+            return bool(request.user and request.user.is_authenticated and request.user.is_superuser)
+        return True
+
+
 # Create your views here.
 class UserViewSet(ModelViewSet):
     queryset = User.objects.all().order_by('-date_joined')
     serializer_class = UserSerializer
+    permission_classes = [UserPermission]
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
     filterset_class = UserFilter
     search_fields = ['username', 'first_name', 'last_name', 'email']
@@ -100,6 +150,7 @@ class UserViewSet(ModelViewSet):
 class DepartmentViewSet(ModelViewSet):
     queryset = Department.objects.filter(is_deleted=False).order_by('name')
     serializer_class = DepartmentSerializer
+    permission_classes = [CanDeleteIfSuperUser]
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
     filterset_class = DepartmentFilter
     search_fields = ['name', 'status']
@@ -108,6 +159,7 @@ class DepartmentViewSet(ModelViewSet):
 class BrandViewSet(ModelViewSet):
     queryset = Brand.objects.filter(is_deleted=False).order_by('name')
     serializer_class = BrandSerializer
+    permission_classes = [CanDeleteIfSuperUser]
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
     filterset_class = BrandFilter
     search_fields = ['name', 'status']
@@ -116,6 +168,7 @@ class BrandViewSet(ModelViewSet):
 class ComputerViewSet(ModelViewSet):
     queryset = Computer.objects.filter(is_deleted=False).select_related('department', 'model', 'model__brand')
     serializer_class = ComputerSerializer
+    permission_classes = [CanDeleteIfSuperUser]
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
     filterset_class = ComputerFilter
     search_fields = [
@@ -145,6 +198,7 @@ class ComputerViewSet(ModelViewSet):
 class ComputerModelViewSet(ModelViewSet):
     queryset = ComputerModel.objects.filter(is_deleted=False).select_related('brand').order_by('name')
     serializer_class = ComputerModelSerializer
+    permission_classes = [CanDeleteIfSuperUser]
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
     filterset_class = ComputerModelFilter
     search_fields = ['name', 'brand__name', 'computer_type', 'status']
@@ -153,6 +207,7 @@ class ComputerModelViewSet(ModelViewSet):
 class PrinterViewSet(ModelViewSet):
     queryset = Printer.objects.filter(is_deleted=False).select_related('department', 'model', 'model__brand')
     serializer_class = PrinterSerializer
+    permission_classes = [CanDeleteIfSuperUser]
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
     filterset_class = PrinterFilter
     search_fields = [
@@ -176,6 +231,7 @@ class PrinterViewSet(ModelViewSet):
 class PrinterModelViewSet(ModelViewSet):
     queryset = PrinterModel.objects.filter(is_deleted=False).select_related('brand').order_by('name')
     serializer_class = PrinterModelSerializer
+    permission_classes = [CanDeleteIfSuperUser]
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
     filterset_class = PrinterModelFilter
     search_fields = ['name', 'brand__name', 'printer_type', 'status']
@@ -184,6 +240,7 @@ class PrinterModelViewSet(ModelViewSet):
 class ComputerLogViewSet(ModelViewSet):
     queryset = ComputerLog.objects.filter(is_deleted=False).select_related('computer', 'department', 'computer__model').order_by('-log_date', '-created_at')
     serializer_class = ComputerLogSerializer
+    permission_classes = [CanDeleteIfSuperUser]
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
     filterset_class = ComputerLogFilter
     search_fields = [
@@ -515,6 +572,7 @@ class PublicIssueReportView(APIView):
 class DisposalRecordViewSet(ModelViewSet):
     """CRUD for hardware disposal records."""
     serializer_class = DisposalRecordSerializer
+    permission_classes = [CanDeleteIfSuperUser]
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
     search_fields = ['disposal_id', 'asset_name', 'asset_ims_code', 'asset_serial_no', 'approved_by', 'notes']
     filterset_fields = ['asset_type', 'disposal_method', 'disposal_reason', 'data_sanitized']
