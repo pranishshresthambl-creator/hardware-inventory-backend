@@ -158,7 +158,7 @@ class ComputerLogFilter(django_filters.FilterSet):
                 Q(action_source='Help Portal') |
                 Q(performer_role='Help Desk User Submission')
             )
-        elif val_upper in ('UNRESOLVED', 'IN_PROGRESS', 'RESOLVED'):
+        elif val_upper in ('UNRESOLVED', 'IN_PROGRESS', 'RESOLVED', 'REFERRED_TO_DISPOSAL'):
             return queryset.filter(resolution_status=val_upper)
         return queryset
 
@@ -229,8 +229,4 @@ class UserFilter(django_filters.FilterSet):
         val_lower = str(value).strip().lower()
         if 'super' in val_lower:
             return queryset.filter(is_superuser=True)
-        elif 'admin' in val_lower:
-            return queryset.filter(is_staff=True, is_superuser=False)
-        elif 'user' in val_lower:
-            return queryset.filter(is_staff=False, is_superuser=False)
-        return queryset
+        return queryset.filter(is_superuser=False)
