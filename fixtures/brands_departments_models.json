@@ -1,0 +1,5160 @@
+[
+  {
+    "model": "inventory.department",
+    "pk": 59,
+    "fields": {
+      "created_at": "2026-05-14 06:59:17.010348",
+      "updated_at": "2026-05-14 06:59:17.010348",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "ASMD",
+      "status": "ACTIVE"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 60,
+    "fields": {
+      "created_at": "2026-05-14 06:59:59.981566",
+      "updated_at": "2026-05-14 06:59:59.981566",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "BANKING",
+      "status": "ACTIVE"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 61,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.460282",
+      "updated_at": "2026-05-14 07:00:00.460282",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "BFIRD",
+      "status": "ACTIVE"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 62,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.787872",
+      "updated_at": "2026-05-14 07:00:00.787872",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "BIRATNAGAR",
+      "status": "ACTIVE"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 63,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.182898",
+      "updated_at": "2026-05-14 07:00:01.182898",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "BIRGUNJ",
+      "status": "ACTIVE"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 64,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.365986",
+      "updated_at": "2026-05-14 07:00:01.365986",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "BSD",
+      "status": "ACTIVE"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 65,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.586676",
+      "updated_at": "2026-05-14 07:00:01.586676",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "BTC",
+      "status": "ACTIVE"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 66,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.672049",
+      "updated_at": "2026-05-14 07:00:01.672049",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "CMD",
+      "status": "ACTIVE"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 67,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.859477",
+      "updated_at": "2026-05-14 07:00:01.859477",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "CPRMD",
+      "status": "ACTIVE"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 68,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.009620",
+      "updated_at": "2026-05-14 07:00:02.009620",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "DHANGADHI",
+      "status": "ACTIVE"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 69,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.142297",
+      "updated_at": "2026-05-14 07:00:02.142297",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "ERD",
+      "status": "ACTIVE"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 70,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.410425",
+      "updated_at": "2026-05-14 07:00:02.410425",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "FICPD",
+      "status": "ACTIVE"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 71,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.495203",
+      "updated_at": "2026-05-14 07:00:02.495203",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "FISD",
+      "status": "ACTIVE"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 72,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.649767",
+      "updated_at": "2026-05-14 07:00:02.649767",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "FMD",
+      "status": "ACTIVE"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 73,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.807825",
+      "updated_at": "2026-05-14 07:00:02.807825",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "FXMD",
+      "status": "ACTIVE"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 74,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.978610",
+      "updated_at": "2026-05-14 07:00:02.978610",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HR",
+      "status": "ACTIVE"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 75,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.105361",
+      "updated_at": "2026-05-14 07:00:03.105361",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "IAD",
+      "status": "ACTIVE"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 76,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.270649",
+      "updated_at": "2026-05-14 07:00:03.270649",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "IT",
+      "status": "ACTIVE"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 77,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.431357",
+      "updated_at": "2026-05-14 07:00:03.431357",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "JANAKPUR",
+      "status": "ACTIVE"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 78,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.593673",
+      "updated_at": "2026-05-14 07:00:03.593673",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "LEGAL",
+      "status": "ACTIVE"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 79,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.753381",
+      "updated_at": "2026-05-14 07:00:03.753381",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "MFISD",
+      "status": "ACTIVE"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 80,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.061766",
+      "updated_at": "2026-05-14 07:00:04.061766",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "MMD",
+      "status": "ACTIVE"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 81,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.151801",
+      "updated_at": "2026-05-14 07:00:04.151801",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "NON BANK",
+      "status": "ACTIVE"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 82,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.407815",
+      "updated_at": "2026-05-14 07:00:04.407815",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OFG",
+      "status": "ACTIVE"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 83,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.609624",
+      "updated_at": "2026-05-14 07:00:04.609624",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "POKHARA",
+      "status": "ACTIVE"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 84,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.833913",
+      "updated_at": "2026-05-14 07:00:04.835024",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "PSD",
+      "status": "ACTIVE"
+    }
+  },
+  {
+    "model": "inventory.department",
+    "pk": 85,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.988736",
+      "updated_at": "2026-05-14 07:00:04.988736",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "SURKHET",
+      "status": "ACTIVE"
+    }
+  },
+  {
+    "model": "inventory.brand",
+    "pk": 34,
+    "fields": {
+      "created_at": "2026-05-14 06:59:17.018089",
+      "updated_at": "2026-05-14 06:59:17.018089",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP",
+      "status": "ACTIVE"
+    }
+  },
+  {
+    "model": "inventory.brand",
+    "pk": 35,
+    "fields": {
+      "created_at": "2026-05-14 06:59:17.118057",
+      "updated_at": "2026-05-14 06:59:17.118057",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "CANON",
+      "status": "ACTIVE"
+    }
+  },
+  {
+    "model": "inventory.brand",
+    "pk": 36,
+    "fields": {
+      "created_at": "2026-05-14 06:59:59.647787",
+      "updated_at": "2026-05-14 06:59:59.647787",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "DELL INC",
+      "status": "ACTIVE"
+    }
+  },
+  {
+    "model": "inventory.brand",
+    "pk": 37,
+    "fields": {
+      "created_at": "2026-05-14 06:59:59.712859",
+      "updated_at": "2026-05-14 06:59:59.712859",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "LENOVO",
+      "status": "ACTIVE"
+    }
+  },
+  {
+    "model": "inventory.brand",
+    "pk": 38,
+    "fields": {
+      "created_at": "2026-05-14 06:59:59.731427",
+      "updated_at": "2026-05-14 06:59:59.731427",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "MSI",
+      "status": "ACTIVE"
+    }
+  },
+  {
+    "model": "inventory.brand",
+    "pk": 39,
+    "fields": {
+      "created_at": "2026-05-14 06:59:59.810085",
+      "updated_at": "2026-05-14 06:59:59.810085",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "UNKNOWN",
+      "status": "ACTIVE"
+    }
+  },
+  {
+    "model": "inventory.brand",
+    "pk": 40,
+    "fields": {
+      "created_at": "2026-05-14 06:59:59.950032",
+      "updated_at": "2026-05-14 06:59:59.950032",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "BENQ",
+      "status": "ACTIVE"
+    }
+  },
+  {
+    "model": "inventory.brand",
+    "pk": 41,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.679844",
+      "updated_at": "2026-05-14 07:00:00.679844",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "DELL",
+      "status": "ACTIVE"
+    }
+  },
+  {
+    "model": "inventory.brand",
+    "pk": 42,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.203187",
+      "updated_at": "2026-05-14 07:00:01.203187",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "ACER",
+      "status": "ACTIVE"
+    }
+  },
+  {
+    "model": "inventory.brand",
+    "pk": 43,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.058841",
+      "updated_at": "2026-05-14 07:00:03.058841",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "FOHN005ALK",
+      "status": "ACTIVE"
+    }
+  },
+  {
+    "model": "inventory.brand",
+    "pk": 44,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.396463",
+      "updated_at": "2026-05-14 07:00:03.396463",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "ASUS",
+      "status": "ACTIVE"
+    }
+  },
+  {
+    "model": "inventory.brand",
+    "pk": 45,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.763128",
+      "updated_at": "2026-05-14 07:00:04.763128",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "DELL/LENOVO CPU",
+      "status": "ACTIVE"
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 723,
+    "fields": {
+      "created_at": "2026-05-14 06:59:59.671022",
+      "updated_at": "2026-05-14 06:59:59.671022",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTIPLEX AIO 7410 65W",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 724,
+    "fields": {
+      "created_at": "2026-05-14 06:59:59.688166",
+      "updated_at": "2026-05-14 06:59:59.688166",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTIPLEX AIO 7410 65W",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 725,
+    "fields": {
+      "created_at": "2026-05-14 06:59:59.721779",
+      "updated_at": "2026-05-14 06:59:59.721779",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "F0HN005ALK",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 37
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 726,
+    "fields": {
+      "created_at": "2026-05-14 06:59:59.740275",
+      "updated_at": "2026-05-14 06:59:59.740275",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "MS-7E06",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 38
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 727,
+    "fields": {
+      "created_at": "2026-05-14 06:59:59.751989",
+      "updated_at": "2026-05-14 06:59:59.751989",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PR00NE 440 23.8INCH G9 ALL IN ONE",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 728,
+    "fields": {
+      "created_at": "2026-05-14 06:59:59.769107",
+      "updated_at": "2026-05-14 06:59:59.769107",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "FDHN005ALK",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 37
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 729,
+    "fields": {
+      "created_at": "2026-05-14 06:59:59.778644",
+      "updated_at": "2026-05-14 06:59:59.778644",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE G5.20.AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 730,
+    "fields": {
+      "created_at": "2026-05-14 06:59:59.791166",
+      "updated_at": "2026-05-14 06:59:59.791166",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE-400 G6 20 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 731,
+    "fields": {
+      "created_at": "2026-05-14 06:59:59.804492",
+      "updated_at": "2026-05-14 06:59:59.804492",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "FQHN005ALK",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 37
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 732,
+    "fields": {
+      "created_at": "2026-05-14 06:59:59.822903",
+      "updated_at": "2026-05-14 06:59:59.822903",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "MS-7B51",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 39
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 733,
+    "fields": {
+      "created_at": "2026-05-14 06:59:59.833073",
+      "updated_at": "2026-05-14 06:59:59.833073",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 440.23.8.AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 734,
+    "fields": {
+      "created_at": "2026-05-14 06:59:59.851707",
+      "updated_at": "2026-05-14 06:59:59.851707",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "IDEACENTER",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 37
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 735,
+    "fields": {
+      "created_at": "2026-05-14 06:59:59.862075",
+      "updated_at": "2026-05-14 06:59:59.862075",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G6",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 736,
+    "fields": {
+      "created_at": "2026-05-14 06:59:59.873747",
+      "updated_at": "2026-05-14 06:59:59.873747",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE-440 G9",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 737,
+    "fields": {
+      "created_at": "2026-05-14 06:59:59.885785",
+      "updated_at": "2026-05-14 06:59:59.885785",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE-400 G6",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 738,
+    "fields": {
+      "created_at": "2026-05-14 06:59:59.898596",
+      "updated_at": "2026-05-14 06:59:59.898596",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTIPLEX AIO 7410 65W",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 39
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 739,
+    "fields": {
+      "created_at": "2026-05-14 06:59:59.921991",
+      "updated_at": "2026-05-14 06:59:59.921991",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G5- ALL IN ONE",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 740,
+    "fields": {
+      "created_at": "2026-05-14 06:59:59.958397",
+      "updated_at": "2026-05-14 06:59:59.958397",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "MS-7B51",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 40
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 741,
+    "fields": {
+      "created_at": "2026-05-14 06:59:59.969097",
+      "updated_at": "2026-05-14 06:59:59.970102",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 440 23.8INCH G9- ALL IN ONE DESKTOP PC",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 742,
+    "fields": {
+      "created_at": "2026-05-14 06:59:59.990810",
+      "updated_at": "2026-05-14 06:59:59.990810",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRODESK G4 SFF",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 743,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.000244",
+      "updated_at": "2026-05-14 07:00:00.000244",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRODESK G5 20",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 744,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.009956",
+      "updated_at": "2026-05-14 07:00:00.009956",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 23.8 INCH G9 ALL-IN-ONE DESKTOP PC",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 745,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.017671",
+      "updated_at": "2026-05-14 07:00:00.017671",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO DESK 400 G4 SFF",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 746,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.033903",
+      "updated_at": "2026-05-14 07:00:00.033903",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO DESK 400 G5 20.0 IN ALL-IN-ONE",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 747,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.038067",
+      "updated_at": "2026-05-14 07:00:00.038067",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 400 G6 20 ALL-IN-ONE-PC",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 748,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.055315",
+      "updated_at": "2026-05-14 07:00:00.055315",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 440 23.8 INCH G9 ALL-IN-ONE- DESKTOPPC",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 749,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.073840",
+      "updated_at": "2026-05-14 07:00:00.073840",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO DESK 400 44 SFF",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 750,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.092937",
+      "updated_at": "2026-05-14 07:00:00.092937",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "UNKNOWN",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 751,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.103344",
+      "updated_at": "2026-05-14 07:00:00.103344",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTIPLEX 3010",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 752,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.110026",
+      "updated_at": "2026-05-14 07:00:00.110026",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G5 20.0 IN ALL-IN-ONE",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 753,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.117936",
+      "updated_at": "2026-05-14 07:00:00.117936",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO DESK 400 G4",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 754,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.136738",
+      "updated_at": "2026-05-14 07:00:00.136738",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 440 G9 20 ALL IN ONE PC",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 755,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.146759",
+      "updated_at": "2026-05-14 07:00:00.146759",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRODESK 400 G2 MT< TPM",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 756,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.156536",
+      "updated_at": "2026-05-14 07:00:00.156536",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 400 G5 20.0 INCH",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 757,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.169662",
+      "updated_at": "2026-05-14 07:00:00.169662",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 440 23.8 INCH G9 A10",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 758,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.182928",
+      "updated_at": "2026-05-14 07:00:00.182928",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO DESK 400 G2 MT",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 759,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.196786",
+      "updated_at": "2026-05-14 07:00:00.196786",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "PRO ONE 400 G6 20 ALL IN ONE",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 760,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.209967",
+      "updated_at": "2026-05-14 07:00:00.209967",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 440 23.8 INCH ALL IN ONE",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 761,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.244076",
+      "updated_at": "2026-05-14 07:00:00.244076",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G5 20 ALL IN ONE",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 762,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.257596",
+      "updated_at": "2026-05-14 07:00:00.257596",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G5 20.0-IN ALL IN ONE",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 763,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.269858",
+      "updated_at": "2026-05-14 07:00:00.269858",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G5 ALL IN ONE 20\"",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 764,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.283894",
+      "updated_at": "2026-05-14 07:00:00.283894",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 400 G6 20",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 765,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.295725",
+      "updated_at": "2026-05-14 07:00:00.295725",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 400 G6 20 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 766,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.310506",
+      "updated_at": "2026-05-14 07:00:00.310506",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 440 23.8 INCH G9 ALL IN ONE",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 767,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.352951",
+      "updated_at": "2026-05-14 07:00:00.352951",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G6 20 INCH ALL IN ONE",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 768,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.367518",
+      "updated_at": "2026-05-14 07:00:00.367518",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 400 G9",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 769,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.379527",
+      "updated_at": "2026-05-14 07:00:00.379527",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 440 G9",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 770,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.392506",
+      "updated_at": "2026-05-14 07:00:00.392506",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 771,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.411530",
+      "updated_at": "2026-05-14 07:00:00.411530",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 772,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.421872",
+      "updated_at": "2026-05-14 07:00:00.421872",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 440 23.8 INCH",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 773,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.433221",
+      "updated_at": "2026-05-14 07:00:00.433221",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G6 20 ALL IN ONE",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 774,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.451621",
+      "updated_at": "2026-05-14 07:00:00.451621",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 440 G9 20 ALL IN ONE",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 775,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.477587",
+      "updated_at": "2026-05-14 07:00:00.477587",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 776,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.493367",
+      "updated_at": "2026-05-14 07:00:00.493367",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G6 20 ALL IN ONE PC",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 777,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.503179",
+      "updated_at": "2026-05-14 07:00:00.503179",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTIPLEX TOWER PLUS 7010",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 778,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.519495",
+      "updated_at": "2026-05-14 07:00:00.519495",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G6 20 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 779,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.529280",
+      "updated_at": "2026-05-14 07:00:00.529280",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTIPLEX TOWER PLUS 7020",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 39
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 780,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.544117",
+      "updated_at": "2026-05-14 07:00:00.544117",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G5 20AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 781,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.556619",
+      "updated_at": "2026-05-14 07:00:00.556619",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G4 20 NT AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 782,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.566481",
+      "updated_at": "2026-05-14 07:00:00.566481",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400  23.8 INCH G9 20 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 783,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.576577",
+      "updated_at": "2026-05-14 07:00:00.576577",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400  G6 20 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 784,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.587689",
+      "updated_at": "2026-05-14 07:00:00.587689",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400  G5 20 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 785,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.634394",
+      "updated_at": "2026-05-14 07:00:00.634394",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400  G3 20 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 786,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.650638",
+      "updated_at": "2026-05-14 07:00:00.650638",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400  23.8 INCH G9 20 AIO DESKTOP PC",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 787,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.660051",
+      "updated_at": "2026-05-14 07:00:00.660051",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G6 20 AIO  PC",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 788,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.670002",
+      "updated_at": "2026-05-14 07:00:00.670002",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "UNKNOWN",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 37
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 789,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.746001",
+      "updated_at": "2026-05-14 07:00:00.746001",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTIPLEX AIO 7410 65W",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 41
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 790,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.761371",
+      "updated_at": "2026-05-14 07:00:00.761371",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTIPLEX 5000",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 41
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 791,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.779598",
+      "updated_at": "2026-05-14 07:00:00.779598",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G9",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 792,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.800340",
+      "updated_at": "2026-05-14 07:00:00.800340",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "IDEACENTERS/FOHN005ALK",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 37
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 793,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.845771",
+      "updated_at": "2026-05-14 07:00:00.845771",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "F0GH00JRLK",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 37
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 794,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.858300",
+      "updated_at": "2026-05-14 07:00:00.858300",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTIPLWEXAIO741065W",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 795,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.871711",
+      "updated_at": "2026-05-14 07:00:00.871711",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "10UKQQG9AX",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 37
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 796,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.886070",
+      "updated_at": "2026-05-14 07:00:00.886070",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTIPLEX 3040",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 797,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.895599",
+      "updated_at": "2026-05-14 07:00:00.895599",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTIPLEX3050",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 798,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.904649",
+      "updated_at": "2026-05-14 07:00:00.904649",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G620",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 799,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.913553",
+      "updated_at": "2026-05-14 07:00:00.913553",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "10UK00G9AX",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 37
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 800,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.929226",
+      "updated_at": "2026-05-14 07:00:00.929226",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTIPLEXAIO 741065W",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 801,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.940774",
+      "updated_at": "2026-05-14 07:00:00.940774",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTIPLEX3020",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 802,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.950898",
+      "updated_at": "2026-05-14 07:00:00.950898",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTIPLEX3021",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 803,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.959928",
+      "updated_at": "2026-05-14 07:00:00.959928",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTIPLEXE 3050",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 804,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.970845",
+      "updated_at": "2026-05-14 07:00:00.970845",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "FOHN005ALK",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 37
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 805,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.980270",
+      "updated_at": "2026-05-14 07:00:00.980270",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPHPLEXAIO 7410 65W",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 806,
+    "fields": {
+      "created_at": "2026-05-14 07:00:00.992577",
+      "updated_at": "2026-05-14 07:00:00.992577",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "FOGHOOJRLK",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 37
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 807,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.001694",
+      "updated_at": "2026-05-14 07:00:01.001694",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G620AIOPC",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 808,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.009634",
+      "updated_at": "2026-05-14 07:00:01.009634",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "10UK0049AX",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 37
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 809,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.025320",
+      "updated_at": "2026-05-14 07:00:01.025320",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTIPLEX3010",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 810,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.039287",
+      "updated_at": "2026-05-14 07:00:01.039287",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE400G6 20AIOPC",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 811,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.053135",
+      "updated_at": "2026-05-14 07:00:01.053135",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTIPLEXAIO 7410 65W",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 812,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.062148",
+      "updated_at": "2026-05-14 07:00:01.062148",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "FOHNOO5ALK",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 37
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 813,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.070222",
+      "updated_at": "2026-05-14 07:00:01.070222",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTIPLEX3040",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 814,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.079771",
+      "updated_at": "2026-05-14 07:00:01.079771",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "IDEACENTERS",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 37
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 815,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.087651",
+      "updated_at": "2026-05-14 07:00:01.087651",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400G620AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 816,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.106613",
+      "updated_at": "2026-05-14 07:00:01.106613",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "INSPIRON5559",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 817,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.117673",
+      "updated_at": "2026-05-14 07:00:01.117673",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "PRO ONE400 4620AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 818,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.129819",
+      "updated_at": "2026-05-14 07:00:01.129819",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "VOSTRO2420",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 819,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.138490",
+      "updated_at": "2026-05-14 07:00:01.139490",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "IDEA CENTERS FOHN005ALK",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 37
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 820,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.154185",
+      "updated_at": "2026-05-14 07:00:01.154185",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400G620",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 821,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.162991",
+      "updated_at": "2026-05-14 07:00:01.162991",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400  G620 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 822,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.174866",
+      "updated_at": "2026-05-14 07:00:01.174866",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 00G620",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 823,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.192121",
+      "updated_at": "2026-05-14 07:00:01.192121",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "DELL INSPIRON 3437",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 41
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 824,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.209793",
+      "updated_at": "2026-05-14 07:00:01.209793",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "PREDATOR PHN16 72",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 42
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 825,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.222879",
+      "updated_at": "2026-05-14 07:00:01.222879",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "PRO DESK 400 G4 SFK",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 826,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.242072",
+      "updated_at": "2026-05-14 07:00:01.242072",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "THINKPAD L13 YOGA G4",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 37
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 827,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.253695",
+      "updated_at": "2026-05-14 07:00:01.253695",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "PRO ONE 440 3.8 IN",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 828,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.285224",
+      "updated_at": "2026-05-14 07:00:01.285224",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "VOSTRO 3888",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 41
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 829,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.297395",
+      "updated_at": "2026-05-14 07:00:01.297395",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "PRO ONE 440",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 830,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.309695",
+      "updated_at": "2026-05-14 07:00:01.309695",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "PRO DESK 400 G2",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 831,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.327410",
+      "updated_at": "2026-05-14 07:00:01.327410",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "PRO ONE 440 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 832,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.337848",
+      "updated_at": "2026-05-14 07:00:01.337848",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "…",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 39
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 833,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.357663",
+      "updated_at": "2026-05-14 07:00:01.357663",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "UNKNOWN",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 834,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.377774",
+      "updated_at": "2026-05-14 07:00:01.377774",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 835,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.391685",
+      "updated_at": "2026-05-14 07:00:01.391685",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G5",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 836,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.400859",
+      "updated_at": "2026-05-14 07:00:01.400859",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G6 20",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 837,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.409982",
+      "updated_at": "2026-05-14 07:00:01.409982",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 440",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 838,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.428675",
+      "updated_at": "2026-05-14 07:00:01.428675",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G5 20 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 839,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.438410",
+      "updated_at": "2026-05-14 07:00:01.438410",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 440 23.8 INCH GG ALL IN ONE",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 840,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.452927",
+      "updated_at": "2026-05-14 07:00:01.452927",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G5 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 841,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.469048",
+      "updated_at": "2026-05-14 07:00:01.469048",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G4",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 842,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.494099",
+      "updated_at": "2026-05-14 07:00:01.494099",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G4 20",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 843,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.509771",
+      "updated_at": "2026-05-14 07:00:01.509771",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G4 20 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 844,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.521997",
+      "updated_at": "2026-05-14 07:00:01.521997",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 65 20 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 845,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.562127",
+      "updated_at": "2026-05-14 07:00:01.562127",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G5 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 846,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.595343",
+      "updated_at": "2026-05-14 07:00:01.595343",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 440 23.8 INCHG9",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 847,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.607901",
+      "updated_at": "2026-05-14 07:00:01.607901",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 400 G5",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 848,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.619872",
+      "updated_at": "2026-05-14 07:00:01.619872",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 440 231NEN",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 849,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.637600",
+      "updated_at": "2026-05-14 07:00:01.637600",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 400 G5 20 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 850,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.648622",
+      "updated_at": "2026-05-14 07:00:01.648622",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE G6 20 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 851,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.662060",
+      "updated_at": "2026-05-14 07:00:01.662060",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "PROONE 440 23.8 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 852,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.679589",
+      "updated_at": "2026-05-14 07:00:01.679589",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 440 23.8 INCH G9 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 853,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.693626",
+      "updated_at": "2026-05-14 07:00:01.693626",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 400 G4 20",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 854,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.703646",
+      "updated_at": "2026-05-14 07:00:01.703646",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 400 G4",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 855,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.709788",
+      "updated_at": "2026-05-14 07:00:01.709788",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 400 G6 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 856,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.730479",
+      "updated_at": "2026-05-14 07:00:01.730479",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 400 G4 AIO 20",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 857,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.740623",
+      "updated_at": "2026-05-14 07:00:01.740623",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 400G6 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 858,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.775243",
+      "updated_at": "2026-05-14 07:00:01.775243",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G4 MT",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 859,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.784907",
+      "updated_at": "2026-05-14 07:00:01.784907",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTILEX ALO 7410 65W",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 860,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.794657",
+      "updated_at": "2026-05-14 07:00:01.794657",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 440 23.8 INCH G9 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 861,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.809816",
+      "updated_at": "2026-05-14 07:00:01.809816",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "F0HN00SALK",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 37
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 862,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.827438",
+      "updated_at": "2026-05-14 07:00:01.827438",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "PRO ONE 400 G4 20 ALO",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 863,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.848552",
+      "updated_at": "2026-05-14 07:00:01.848552",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO DEXK 400 G4 SFR",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 864,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.867311",
+      "updated_at": "2026-05-14 07:00:01.867311",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE G4 SFF",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 865,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.876682",
+      "updated_at": "2026-05-14 07:00:01.876682",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 440 23.8 G9 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 866,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.887407",
+      "updated_at": "2026-05-14 07:00:01.887407",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 867,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.910108",
+      "updated_at": "2026-05-14 07:00:01.910108",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 40 G6 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 868,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.919996",
+      "updated_at": "2026-05-14 07:00:01.919996",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G3 MI",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 869,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.930049",
+      "updated_at": "2026-05-14 07:00:01.930049",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G4 20.0 IN AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 870,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.942488",
+      "updated_at": "2026-05-14 07:00:01.942488",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G5 20 IN AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 871,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.956594",
+      "updated_at": "2026-05-14 07:00:01.956594",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G6 20.0 IN AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 872,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.972859",
+      "updated_at": "2026-05-14 07:00:01.972859",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G3 20.0 IN AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 873,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.981916",
+      "updated_at": "2026-05-14 07:00:01.981916",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 440 G9",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 874,
+    "fields": {
+      "created_at": "2026-05-14 07:00:01.993072",
+      "updated_at": "2026-05-14 07:00:01.993072",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 480 G6 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 875,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.002612",
+      "updated_at": "2026-05-14 07:00:02.002612",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G5 20.0 IN AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 876,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.017575",
+      "updated_at": "2026-05-14 07:00:02.017575",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTIPLEX 7470 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 877,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.028272",
+      "updated_at": "2026-05-14 07:00:02.028272",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO DEXK 400 G4 SFF",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 878,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.043598",
+      "updated_at": "2026-05-14 07:00:02.043598",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G6 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 879,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.059789",
+      "updated_at": "2026-05-14 07:00:02.059789",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTIPLEX 7410 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 880,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.067471",
+      "updated_at": "2026-05-14 07:00:02.067471",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTIPLEX 5400 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 881,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.093623",
+      "updated_at": "2026-05-14 07:00:02.093623",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTIPLEX AIO 7410",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 882,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.102760",
+      "updated_at": "2026-05-14 07:00:02.102760",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTILEX 5400 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 883,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.110010",
+      "updated_at": "2026-05-14 07:00:02.110010",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTILEX AIO 7410",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 884,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.117502",
+      "updated_at": "2026-05-14 07:00:02.117502",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 1328",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 885,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.149614",
+      "updated_at": "2026-05-14 07:00:02.149614",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 440 G6 20",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 886,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.159794",
+      "updated_at": "2026-05-14 07:00:02.159794",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 440 G9 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 887,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.168638",
+      "updated_at": "2026-05-14 07:00:02.168638",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 888,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.183159",
+      "updated_at": "2026-05-14 07:00:02.183159",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 400 G4 20.0 NT AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 889,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.195083",
+      "updated_at": "2026-05-14 07:00:02.195083",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 440 23.8 INCH G9",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 890,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.209768",
+      "updated_at": "2026-05-14 07:00:02.209768",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 440 G6 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 891,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.241151",
+      "updated_at": "2026-05-14 07:00:02.241151",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 440 23.8 INCH G9 AIO PC",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 892,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.253684",
+      "updated_at": "2026-05-14 07:00:02.253684",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 440 23.8",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 893,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.285240",
+      "updated_at": "2026-05-14 07:00:02.285240",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 440 23.8 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 894,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.302036",
+      "updated_at": "2026-05-14 07:00:02.302036",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 440 23.8 G9 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 895,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.322769",
+      "updated_at": "2026-05-14 07:00:02.322769",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 400 G4 20.0-IN NT AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 896,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.336294",
+      "updated_at": "2026-05-14 07:00:02.336294",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 400 G5 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 897,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.349571",
+      "updated_at": "2026-05-14 07:00:02.349571",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 400 G5 20.0",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 898,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.378906",
+      "updated_at": "2026-05-14 07:00:02.378906",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRODESK 400 G4",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 899,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.423039",
+      "updated_at": "2026-05-14 07:00:02.423039",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G6 20 AIO PC",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 900,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.437464",
+      "updated_at": "2026-05-14 07:00:02.437464",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G4 20 AIO PC",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 901,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.478276",
+      "updated_at": "2026-05-14 07:00:02.478276",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G5 20 AIO8CG03365L5",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 902,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.502711",
+      "updated_at": "2026-05-14 07:00:02.502711",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "ST100LM049-2GH172",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 903,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.509942",
+      "updated_at": "2026-05-14 07:00:02.509942",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 904,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.545155",
+      "updated_at": "2026-05-14 07:00:02.545155",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTILEX 3010",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 41
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 905,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.567604",
+      "updated_at": "2026-05-14 07:00:02.567604",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTIPLEX 3010",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 906,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.586374",
+      "updated_at": "2026-05-14 07:00:02.586374",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G4 20INCH",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 907,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.595442",
+      "updated_at": "2026-05-14 07:00:02.595442",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 20.0 INCH",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 908,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.606014",
+      "updated_at": "2026-05-14 07:00:02.606014",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "FO4N005ALK",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 37
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 909,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.615774",
+      "updated_at": "2026-05-14 07:00:02.615774",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTIPLEX ALO 7410 65W",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 41
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 910,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.636363",
+      "updated_at": "2026-05-14 07:00:02.636363",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PTO ONE 400 G6",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 911,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.659633",
+      "updated_at": "2026-05-14 07:00:02.659633",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 400 G6 20 ALL-IN-ONE",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 912,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.673167",
+      "updated_at": "2026-05-14 07:00:02.673167",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTIPLEX AIO 7410 65 W",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 913,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.683698",
+      "updated_at": "2026-05-14 07:00:02.683698",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 400 G5 20 ALL-IN-ONE",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 914,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.701312",
+      "updated_at": "2026-05-14 07:00:02.701312",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 440 23.8 INCH ALL-IN-ONE",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 915,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.716014",
+      "updated_at": "2026-05-14 07:00:02.716014",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 400 G4 20 ALL-IN-ONE",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 916,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.745641",
+      "updated_at": "2026-05-14 07:00:02.745641",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "IDEA CENTER",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 37
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 917,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.757482",
+      "updated_at": "2026-05-14 07:00:02.757482",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRODESK 400 G4 SFF",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 918,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.768101",
+      "updated_at": "2026-05-14 07:00:02.768101",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "PROONE 400 G6 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 919,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.797587",
+      "updated_at": "2026-05-14 07:00:02.797587",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 400G",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 920,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.833799",
+      "updated_at": "2026-05-14 07:00:02.833799",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 400 G6",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 921,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.843728",
+      "updated_at": "2026-05-14 07:00:02.843728",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 400 G5 20.0 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 922,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.864030",
+      "updated_at": "2026-05-14 07:00:02.864030",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 400 G6 20 AIO PC",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 923,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.876595",
+      "updated_at": "2026-05-14 07:00:02.876595",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 400 G4 20.0 -IN AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 924,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.898472",
+      "updated_at": "2026-05-14 07:00:02.898472",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 400 G5 20.0- IN",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 925,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.909832",
+      "updated_at": "2026-05-14 07:00:02.909832",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 400 G4 20.0- IN",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 926,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.929772",
+      "updated_at": "2026-05-14 07:00:02.929772",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 400 G5 20.0- IN AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 927,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.958656",
+      "updated_at": "2026-05-14 07:00:02.958656",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 400 G4 20.0- IN AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 928,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.987879",
+      "updated_at": "2026-05-14 07:00:02.987879",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE DEXK 400 G3 MT",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 929,
+    "fields": {
+      "created_at": "2026-05-14 07:00:02.997885",
+      "updated_at": "2026-05-14 07:00:02.997885",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE DEXK 400 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 930,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.007793",
+      "updated_at": "2026-05-14 07:00:03.007793",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE DEXK 440 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 931,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.017680",
+      "updated_at": "2026-05-14 07:00:03.017680",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G4 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 932,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.029612",
+      "updated_at": "2026-05-14 07:00:03.029612",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G6 20AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 933,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.037706",
+      "updated_at": "2026-05-14 07:00:03.037706",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G6 20AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 934,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.067825",
+      "updated_at": "2026-05-14 07:00:03.067825",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G20 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 43
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 935,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.082901",
+      "updated_at": "2026-05-14 07:00:03.082901",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "LENOVO",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 43
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 936,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.093752",
+      "updated_at": "2026-05-14 07:00:03.093752",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "PRO ONE 400 G4 20 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 937,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.117613",
+      "updated_at": "2026-05-14 07:00:03.117613",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTIPLEX 790",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 938,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.126828",
+      "updated_at": "2026-05-14 07:00:03.126828",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 440 23.8INCHG9",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 939,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.140791",
+      "updated_at": "2026-05-14 07:00:03.140791",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE G6 20 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 940,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.159672",
+      "updated_at": "2026-05-14 07:00:03.159672",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G5 20.0 -IN AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 941,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.178542",
+      "updated_at": "2026-05-14 07:00:03.178542",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "KXG60ZNV2356G KIOXIA",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 942,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.197717",
+      "updated_at": "2026-05-14 07:00:03.197717",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G6 20.0 -IN AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 943,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.221925",
+      "updated_at": "2026-05-14 07:00:03.221925",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G4 20.0 -IN NT AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 944,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.233737",
+      "updated_at": "2026-05-14 07:00:03.233737",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRODESK 400 G4SFF",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 945,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.244353",
+      "updated_at": "2026-05-14 07:00:03.244353",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G6 20.0-AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 946,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.256881",
+      "updated_at": "2026-05-14 07:00:03.256881",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G5 20.0 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 947,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.289428",
+      "updated_at": "2026-05-14 07:00:03.289428",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 400 G4 20-IN NT AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 948,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.305331",
+      "updated_at": "2026-05-14 07:00:03.305331",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 400 G4 20-IN AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 949,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.339075",
+      "updated_at": "2026-05-14 07:00:03.339075",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 400 G5 20.0-IN AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 950,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.351601",
+      "updated_at": "2026-05-14 07:00:03.351601",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 400 G6 20.0 AIO PC",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 951,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.368254",
+      "updated_at": "2026-05-14 07:00:03.368254",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 440",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 952,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.404640",
+      "updated_at": "2026-05-14 07:00:03.404640",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "ASUS, VASTRO 3888",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 44
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 953,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.445790",
+      "updated_at": "2026-05-14 07:00:03.445790",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "INSPRIRON 5400 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 954,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.471946",
+      "updated_at": "2026-05-14 07:00:03.471946",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "UNKNOWN",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 39
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 955,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.481967",
+      "updated_at": "2026-05-14 07:00:03.481967",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 440 G9 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 956,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.500279",
+      "updated_at": "2026-05-14 07:00:03.500279",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "INSPRIRON 5490 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 957,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.524684",
+      "updated_at": "2026-05-14 07:00:03.524684",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G4 SFF",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 958,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.534324",
+      "updated_at": "2026-05-14 07:00:03.534324",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTIPLEX AIO 790 65W",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 959,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.545209",
+      "updated_at": "2026-05-14 07:00:03.545209",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "INSPIRON 5400 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 960,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.563044",
+      "updated_at": "2026-05-14 07:00:03.563044",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "INSPIRON 5490 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 961,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.606229",
+      "updated_at": "2026-05-14 07:00:03.606229",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "PRO ONE 440 23.8 INCH G9 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 962,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.619857",
+      "updated_at": "2026-05-14 07:00:03.619857",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "PRO ONE 440  G5 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 963,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.654406",
+      "updated_at": "2026-05-14 07:00:03.654406",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "PRO ONE 400 G5 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 964,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.666106",
+      "updated_at": "2026-05-14 07:00:03.666106",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "PRO ONE 400 G4 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 965,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.684214",
+      "updated_at": "2026-05-14 07:00:03.684214",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "PRO ONE 440 23.8 INCH  AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 966,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.709808",
+      "updated_at": "2026-05-14 07:00:03.709808",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO DESK G2 MT",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 967,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.741857",
+      "updated_at": "2026-05-14 07:00:03.741857",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO DESK 400 G2",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 968,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.763101",
+      "updated_at": "2026-05-14 07:00:03.763101",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTIPLEX AI0 7410 65W",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 969,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.775607",
+      "updated_at": "2026-05-14 07:00:03.775607",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "FOHN005AKL",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 37
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 970,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.784733",
+      "updated_at": "2026-05-14 07:00:03.784733",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OTIPLEX AIO 741065W",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 971,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.797731",
+      "updated_at": "2026-05-14 07:00:03.797731",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 400",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 972,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.809816",
+      "updated_at": "2026-05-14 07:00:03.809816",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 973,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.827616",
+      "updated_at": "2026-05-14 07:00:03.827616",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 974,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.867589",
+      "updated_at": "2026-05-14 07:00:03.867589",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO 400 G4",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 975,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.879301",
+      "updated_at": "2026-05-14 07:00:03.879301",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONR 400 G5",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 976,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.894820",
+      "updated_at": "2026-05-14 07:00:03.894820",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONR 400 G6",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 977,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.906439",
+      "updated_at": "2026-05-14 07:00:03.906439",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 440 23.8 INCH G9",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 978,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.918946",
+      "updated_at": "2026-05-14 07:00:03.918946",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "ALL IN ONE  HP PRO ONE 400",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 979,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.936240",
+      "updated_at": "2026-05-14 07:00:03.936240",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "ALL IN ONE  HP PRO ONE 400 G5",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 980,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.950292",
+      "updated_at": "2026-05-14 07:00:03.950292",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PTO ONE 400 G6 20 A-I-O",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 981,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.962232",
+      "updated_at": "2026-05-14 07:00:03.962232",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "A-I-O",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 982,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.973697",
+      "updated_at": "2026-05-14 07:00:03.973697",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONR 400 GGGGG5 20.0 A-I-O",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 983,
+    "fields": {
+      "created_at": "2026-05-14 07:00:03.985993",
+      "updated_at": "2026-05-14 07:00:03.985993",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTI;EX AIO 7410 65W",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 984,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.001928",
+      "updated_at": "2026-05-14 07:00:04.001928",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONR 440 23.8 INCH G9",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 985,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.010031",
+      "updated_at": "2026-05-14 07:00:04.010031",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HPPRO ONR 400 G6 20 A I O",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 986,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.017879",
+      "updated_at": "2026-05-14 07:00:04.017879",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "UNKNOWN",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 41
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 987,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.036379",
+      "updated_at": "2026-05-14 07:00:04.036379",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO OE 400 G6 20 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 988,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.049262",
+      "updated_at": "2026-05-14 07:00:04.049262",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTILEX AIO 7410 65W",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 989,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.078800",
+      "updated_at": "2026-05-14 07:00:04.078800",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G4 20.0",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 990,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.097731",
+      "updated_at": "2026-05-14 07:00:04.097731",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTRPLEX A10 7410 65W",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 991,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.107955",
+      "updated_at": "2026-05-14 07:00:04.107955",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 GU AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 992,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.117690",
+      "updated_at": "2026-05-14 07:00:04.117690",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "FOHN004ALK",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 37
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 993,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.126386",
+      "updated_at": "2026-05-14 07:00:04.126386",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G6 AIO20",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 994,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.136000",
+      "updated_at": "2026-05-14 07:00:04.137504",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTRPLEX AIO 741065W",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 995,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.163600",
+      "updated_at": "2026-05-14 07:00:04.163600",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTIXPLEX AIO 7410 65W",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 996,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.209961",
+      "updated_at": "2026-05-14 07:00:04.209961",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G5 20",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 997,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.224200",
+      "updated_at": "2026-05-14 07:00:04.224200",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE G4 20 IN NT AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 998,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.234605",
+      "updated_at": "2026-05-14 07:00:04.234605",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 440 23.8 INCH G9 AIO PC",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 999,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.247580",
+      "updated_at": "2026-05-14 07:00:04.247580",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 20.0 INCH NT AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1000,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.258913",
+      "updated_at": "2026-05-14 07:00:04.258913",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE G5 20 IN NT AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1001,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.273999",
+      "updated_at": "2026-05-14 07:00:04.273999",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE  400 G6 20 IN NT AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1002,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.287715",
+      "updated_at": "2026-05-14 07:00:04.287715",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "LENEVO THINK CENTER",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 37
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1003,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.301219",
+      "updated_at": "2026-05-14 07:00:04.301219",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE  400 G6 20 IN  AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1004,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.317961",
+      "updated_at": "2026-05-14 07:00:04.317961",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE  400 G4   AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1005,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.331671",
+      "updated_at": "2026-05-14 07:00:04.331671",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE  440 G9",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1006,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.346007",
+      "updated_at": "2026-05-14 07:00:04.346007",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE  400 G4 20  AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1007,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.359477",
+      "updated_at": "2026-05-14 07:00:04.359477",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE  440 23.8INCH IN  AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1008,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.369996",
+      "updated_at": "2026-05-14 07:00:04.369996",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "LENEVO",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 37
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1009,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.381530",
+      "updated_at": "2026-05-14 07:00:04.381530",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE  400 G4 20",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1010,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.396343",
+      "updated_at": "2026-05-14 07:00:04.396343",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE  400 G6 20  AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1011,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.420597",
+      "updated_at": "2026-05-14 07:00:04.420597",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTIPLEX AIO 7410 65 W",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 41
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1012,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.430901",
+      "updated_at": "2026-05-14 07:00:04.430901",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PROONE 440 G9 ALL IN ONE",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1013,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.461874",
+      "updated_at": "2026-05-14 07:00:04.461874",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G4 20.0 IN NT AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1014,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.479932",
+      "updated_at": "2026-05-14 07:00:04.479932",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 440 AIO PC",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1015,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.507841",
+      "updated_at": "2026-05-14 07:00:04.507841",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G5 20.11 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1016,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.517721",
+      "updated_at": "2026-05-14 07:00:04.517721",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "H PRO ONE 400 G5 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1017,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.531824",
+      "updated_at": "2026-05-14 07:00:04.531824",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "PRO ONE 400 G2 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1018,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.545505",
+      "updated_at": "2026-05-14 07:00:04.545505",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "PRO ONE 440 G9 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1019,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.560857",
+      "updated_at": "2026-05-14 07:00:04.560857",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "PRO ONE 400 G5 20.0 INCH AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1020,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.573205",
+      "updated_at": "2026-05-14 07:00:04.573205",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "PROONE 400 G5 10.0 IN AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1021,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.582943",
+      "updated_at": "2026-05-14 07:00:04.582943",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "INSPIRON 5490 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 41
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1022,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.597649",
+      "updated_at": "2026-05-14 07:00:04.597649",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "PROONE 44023.8INCH G9 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1023,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.617501",
+      "updated_at": "2026-05-14 07:00:04.617501",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTIPLEX 3010 =DELL MONITOR",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 41
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1024,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.637555",
+      "updated_at": "2026-05-14 07:00:04.637555",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "10ASA04UIH",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 37
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1025,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.658867",
+      "updated_at": "2026-05-14 07:00:04.658867",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "11FJ00JUM",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 37
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1026,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.668260",
+      "updated_at": "2026-05-14 07:00:04.668260",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "10ASA00HR0M",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 37
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1027,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.683035",
+      "updated_at": "2026-05-14 07:00:04.683035",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "PRO ONE 400 G6 20",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1028,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.694463",
+      "updated_at": "2026-05-14 07:00:04.694463",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "11FJ000J0M",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 37
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1029,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.710054",
+      "updated_at": "2026-05-14 07:00:04.710054",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTIPLEX 3010",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 41
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1030,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.727870",
+      "updated_at": "2026-05-14 07:00:04.727870",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "10AS00HRUM",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 37
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1031,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.742318",
+      "updated_at": "2026-05-14 07:00:04.742318",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "11FJ000JOM",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 37
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1032,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.772487",
+      "updated_at": "2026-05-14 07:00:04.772487",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "10AS00HRUM",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 45
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1033,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.785487",
+      "updated_at": "2026-05-14 07:00:04.785487",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "DELL",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 41
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1034,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.799767",
+      "updated_at": "2026-05-14 07:00:04.799767",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "PRO ONE 400 G6 20AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1035,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.817962",
+      "updated_at": "2026-05-14 07:00:04.817962",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "PRODESK 400 G4",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1036,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.850121",
+      "updated_at": "2026-05-14 07:00:04.850121",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "DELL OPTIPLEX AIO7410 65W",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1037,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.878736",
+      "updated_at": "2026-05-14 07:00:04.878736",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTIPLEX A10 7410",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1038,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.936655",
+      "updated_at": "2026-05-14 07:00:04.936655",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE 400 G620 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1039,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.947828",
+      "updated_at": "2026-05-14 07:00:04.947828",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTIPLEX 3050",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1040,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.957798",
+      "updated_at": "2026-05-14 07:00:04.957798",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "FOHN005AKL",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1041,
+    "fields": {
+      "created_at": "2026-05-14 07:00:04.999158",
+      "updated_at": "2026-05-14 07:00:04.999158",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "SWIFT SFG14-71",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 42
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1042,
+    "fields": {
+      "created_at": "2026-05-14 07:00:05.010520",
+      "updated_at": "2026-05-14 07:00:05.010520",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "OPTIPLEX AIO 741065",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1043,
+    "fields": {
+      "created_at": "2026-05-14 07:00:05.022005",
+      "updated_at": "2026-05-14 07:00:05.022005",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "DELL VESTRO 3670",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1044,
+    "fields": {
+      "created_at": "2026-05-14 07:00:05.033539",
+      "updated_at": "2026-05-14 07:00:05.033539",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "HP PRO ONE  400 G420.0AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1045,
+    "fields": {
+      "created_at": "2026-05-14 07:00:05.050028",
+      "updated_at": "2026-05-14 07:00:05.050028",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "DELL OPTIPLEX 3260 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1046,
+    "fields": {
+      "created_at": "2026-05-14 07:00:05.059681",
+      "updated_at": "2026-05-14 07:00:05.059681",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "DELL OPTIPLEX 3080 AIO",
+      "computer_type": "ALL_IN_ONE",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1047,
+    "fields": {
+      "created_at": "2026-05-14 07:00:05.067913",
+      "updated_at": "2026-05-14 07:00:05.067913",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "VOSTRO3888",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.computermodel",
+    "pk": 1048,
+    "fields": {
+      "created_at": "2026-05-14 07:00:05.080508",
+      "updated_at": "2026-05-14 07:00:05.080508",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "VOSTRO3670",
+      "computer_type": "DESKTOP",
+      "status": "ACTIVE",
+      "brand": 36
+    }
+  },
+  {
+    "model": "inventory.printermodel",
+    "pk": 22,
+    "fields": {
+      "created_at": "2026-05-14 06:59:17.028020",
+      "updated_at": "2026-05-14 06:59:17.028020",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "LASER JET PRO MFP M227 FDW",
+      "printer_type": "LASER",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.printermodel",
+    "pk": 23,
+    "fields": {
+      "created_at": "2026-05-14 06:59:17.045890",
+      "updated_at": "2026-05-14 06:59:17.045890",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "LASER JET PRO MFP 4103FDN",
+      "printer_type": "LASER",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.printermodel",
+    "pk": 24,
+    "fields": {
+      "created_at": "2026-05-14 06:59:17.109848",
+      "updated_at": "2026-05-14 06:59:17.109848",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "LASER JET PRO MFP M426 FDW",
+      "printer_type": "COLOR_LASER",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.printermodel",
+    "pk": 25,
+    "fields": {
+      "created_at": "2026-05-14 06:59:17.132970",
+      "updated_at": "2026-05-14 06:59:17.132970",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "IMAGECLASS MF249DW",
+      "printer_type": "COLOR_LASER",
+      "status": "ACTIVE",
+      "brand": 35
+    }
+  },
+  {
+    "model": "inventory.printermodel",
+    "pk": 26,
+    "fields": {
+      "created_at": "2026-05-14 06:59:17.194834",
+      "updated_at": "2026-05-14 06:59:17.194834",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "LASER JET PRO MFP M26 FDW",
+      "printer_type": "COLOR_LASER",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.printermodel",
+    "pk": 27,
+    "fields": {
+      "created_at": "2026-05-14 06:59:17.209795",
+      "updated_at": "2026-05-14 06:59:17.209795",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "NAN",
+      "printer_type": "COLOR_LASER",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.printermodel",
+    "pk": 28,
+    "fields": {
+      "created_at": "2026-05-14 06:59:17.292319",
+      "updated_at": "2026-05-14 06:59:17.292319",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "LASER JET PRO MFP M428 FDW",
+      "printer_type": "LASER",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.printermodel",
+    "pk": 29,
+    "fields": {
+      "created_at": "2026-05-14 06:59:17.317683",
+      "updated_at": "2026-05-14 06:59:17.317683",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "LASER JET PRO MFP 227FDW",
+      "printer_type": "LASER",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  },
+  {
+    "model": "inventory.printermodel",
+    "pk": 30,
+    "fields": {
+      "created_at": "2026-05-14 06:59:17.375695",
+      "updated_at": "2026-05-14 06:59:17.375695",
+      "is_deleted": false,
+      "deleted_at": null,
+      "name": "LASER JET PRO MFP 428FDW",
+      "printer_type": "LASER",
+      "status": "ACTIVE",
+      "brand": 34
+    }
+  }
+]

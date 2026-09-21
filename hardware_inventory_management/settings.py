@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/6.0/ref/settings/
 """
 
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -83,12 +84,13 @@ WSGI_APPLICATION = 'hardware_inventory_management.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-        'OPTIONS': {
-            'timeout': 60,
-            'transaction_mode': 'IMMEDIATE',
-        }
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.environ.get('POSTGRES_DB', 'nrb_hardware_db'),
+        'USER': os.environ.get('POSTGRES_USER', 'nrb_user'),
+        'PASSWORD': os.environ.get('POSTGRES_PASSWORD', 'nrb_password'),
+        'HOST': os.environ.get('POSTGRES_HOST', 'localhost'),
+        'PORT': os.environ.get('POSTGRES_PORT', '5432'),
+        'CONN_MAX_AGE': int(os.environ.get('CONN_MAX_AGE', '600')),
     }
 }
 
