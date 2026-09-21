@@ -475,7 +475,10 @@ class PublicDeviceLookupView(APIView):
                 Q(host_name__icontains=query) |
                 Q(ims_code__icontains=query) |
                 Q(serial_no__icontains=query) |
-                Q(ip_address__icontains=query)
+                Q(ip_address__icontains=query) |
+                Q(model__name__icontains=query) |
+                Q(model__brand__name__icontains=query) |
+                Q(department__name__icontains=query)
             )
         
         if limit_param and limit_param.isdigit():
