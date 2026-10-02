@@ -15,7 +15,6 @@ from .views import (
     LoginAPIView,
     PublicDeviceLookupView,
     PublicIssueReportView,
-    PublicAutoDetectDeviceView,
 )
 from .import_views import (
     BulkImportComputerView,
@@ -43,6 +42,5 @@ urlpatterns = [
     path('login/', LoginAPIView.as_view()),
     path('token/refresh/', TokenRefreshView.as_view()),
     path('public/devices/', PublicDeviceLookupView.as_view(), name='public-devices'),
-    path('public/auto-detect-device/', PublicAutoDetectDeviceView.as_view(), name='public-auto-detect'),
     path('public/report-issue/', PublicIssueReportView.as_view(), name='public-report-issue'),
 ]
